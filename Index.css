@@ -64,10 +64,10 @@ a, u {
   text-decoration: none;
 }
 
-.quoteButton {
-padding: 0 18px;
+.panel2 {
+  padding: 0 18px;
   display: none;
-  background-color: coral;
-  overflow: hidden;
+  background-color: #15e7fe;
+  overflow: visible;
   border-style: dashed;
 }
