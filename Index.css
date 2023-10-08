@@ -64,7 +64,7 @@ a, u {
   text-decoration: none;
 }
 
-.quoteButton {
+button {
 padding: 0 18px;
   display: none;
   background-color: coral;
