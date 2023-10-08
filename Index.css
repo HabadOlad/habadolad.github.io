@@ -1,0 +1,73 @@
+body {
+    background-color: #FEE715;
+    margin: 0 auto;
+    padding: 0 20px 20px 20px;
+   }
+  html {
+    font-size: 30px; /* px means "pixels": the base font size is now x pixels high */
+    font-family: 'Londrina Solid'; /* this should be the rest of the output you got from Google Fonts */
+    text-align: center;
+    color:  #101820; 
+  }
+/* Aligns the heading text to the center. */
+ 
+h1 {
+  text-align: center;
+  font-size: 30px;
+}
+
+h2 {
+  font-size: 30px;
+  
+}
+
+h3 {
+  font-size: 25px;
+}
+
+ul, ol {
+font-size: 25px;
+}
+
+p {
+  font-size: 20px;
+}
+
+.accordion {
+  background-color: #FEE715;
+  font-family: 'Londrina Solid';
+  color: #101820;
+  cursor: pointer;
+  padding: 18px;
+  width: 100%;
+  border: none;
+  text-align: center;
+  outline: none;
+  font-size: 30px;
+  transition: 0.4s;
+}
+
+.active, .accordion:hover {
+  background-color: coral; 
+  border-style:dashed;
+}
+
+.panel {
+  padding: 0 18px;
+  display: none;
+  background-color: coral;
+  overflow: hidden;
+  border-style: dashed;
+}
+
+a, u {
+  text-decoration: none;
+}
+
+.quoteButton {
+padding: 0 18px;
+  display: none;
+  background-color: coral;
+  overflow: hidden;
+  border-style: dashed;
+}
