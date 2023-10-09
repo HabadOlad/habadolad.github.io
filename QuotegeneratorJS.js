@@ -99,7 +99,7 @@ var quotes = [
     "I keep wanting to crawl back into the womb",
     "A terrible depression yesterday. Visions of my life petering out into a kind of soft brained stupor from lack of use",
     "You have lost all delight in life. Ahead is a large array of blind alleys. You are half-deliberately, half-desperately cutting off your grip on creative life. You are becoming a neuter machine. You cannot love, even if you knew how to begin to love. Every thought is a devil, a hell-if you could do a lot of things over again, ah, how differently you would do them! You want to go home, back to the womb. You watch the world bang door after door in your face, numbly, bitterly. You have forgotten the secret you knew, once, ah, once, of being joyous, of laughing, of opening doors. ",
-    "Unexpressed emotions will never die. Tey are buried alive and will come forth later in uglier ways",
+    "Unexpressed emotions will never die. They are buried alive and will come forth later in uglier ways",
     "Many, many men have been just as troubled morally and spiritually as you are right now. Happily, someof them kept records of their trobles. You'll learn from them. - if you want to",
     "If you run away from pain without identifying and solving the underlying issue, you will probably run to exactly the same situation again",
     "I believe depression is legitimate. But i also believe if you don't: exercise, eat nutritious foods, get sunlight, get enough sleep, consume positive material, surround yourself with support, then you aren't giving yourself a fighting chance",
