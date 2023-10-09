@@ -3,6 +3,9 @@ var quotes = [
     "Anyone can do any amount of work, provided it isn\’t the work he is supposed to be doing at that moment",
     "Do not wait to strike till the iron is hot; but make it hot by striking. ",
     "Set a timer and compete to beat the clock to conquer procrastination. ",
-    "Start by doing what\’s necessary, then what\’s possible, and suddenly you are doing the impossible.",];
+    "Start by doing what\’s necessary, then what\’s possible, and suddenly you are doing the impossible."
+];
+function quoteRandomizer() {
 var randomNumber = Math.floor(Math.random()* (quotes.length));
 document.getElementById('quoteDisplay').innerHTML = quotes[randomNumber];
+}
