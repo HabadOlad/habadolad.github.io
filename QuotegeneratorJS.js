@@ -1,4 +1,3 @@
-//This is thr javascript for the quote generator 
 var quotes = [
     "You can't just turn on creativity like a faucet. You must be in the right mood. What mood is that? Last-minute panic.”,
     "You may delay, but time will not.”,
@@ -98,7 +97,16 @@ var quotes = [
     "In three words I can sum up everything I've learned about life: it goes on.”,
     "To live is the rarest thing in the world. Most people exist, that is all.”,
     "I have not failed. I've just found 10'000 ways that won't work",
-    
+    "Wounds won’t heal the way you want them to, they heal the way they need to",
+    "Every day begins with an act of courage and hope: getting out of bed.”,
+    "You never know how strong you are, until being strong is the only choice you have.” ,
+];
+
+var randomNumber = Math.floor(Math.random()* (quotes.length));
+console.log(randomNumber);
+document.getElementById('quoteDisplay').innerHTML = quotes[randomNumber];
+
+
 
 
 
