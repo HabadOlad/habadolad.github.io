@@ -103,5 +103,4 @@ var quotes = [
 ];
 
 var randomNumber = Math.floor(Math.random()* (quotes.length));
-console.log(randomNumber);
 document.getElementById('quoteDisplay').innerHTML = quotes[randomNumber];
