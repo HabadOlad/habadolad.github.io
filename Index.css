@@ -63,24 +63,3 @@ p {
 a, u {
   text-decoration: none;
 }
-
-.panel2 {
-  padding: 0 18px;
-  display: none;
-  background-color: #15e7fe;
-  overflow: visible;
-  border-style: dashed;
-}
-.accordion2 {
-  background-color: #15e7fe;
-  font-family: 'Londrina Solid';
-  color: #101820;
-  cursor: pointer;
-  padding: 18px;
-  width: 100%;
-  border: none;
-  text-align: center;
-  outline: none;
-  font-size: 30px;
-  transition: 0.4s;
-}
