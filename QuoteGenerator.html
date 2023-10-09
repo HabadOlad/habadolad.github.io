@@ -20,16 +20,16 @@
 <body>
     <!-- The div works as a divider for HTML docs, id attribute is an identifier so Javascript can easily grab and manipulate it-->
     <!-- In this case, we will use JavaScript to grab the element with the id “quoteDisplay” to place quotes within the <div> element.-->
-<div class="section-break"> </div>
-        <div class="column-quote">  
-    <div class = "new-quote" id="quoteDisplay">
+        <figure class="quote">
+            <blockquote>
+        <div id="quoteDisplay">
         <!-- Hopefully quote displays over here-->
         
-
-    </div>
     <!-- After that, we create a <button> element with an onclick attribute with “newQuote()” passed in as a parameter. -->
     <!-- button element allows me to create , the on click attribute is used to set a function to the button, so that every time you click on the button, it will run the function that was passed into the <button>’s onclick attribute.-->
     </div>
+</blockquote>
+<figcaption>
         <button onclick="quoteRandomizer()">Quote Randomizer</button>
     <!--So hopefully, everytime you click on the button, it will run the function quoteRandomizer(), the function will be defined in the JS script-->
     
