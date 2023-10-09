@@ -64,3 +64,25 @@ a, u {
   text-decoration: none;
 }
 
+
+#gen {
+  outline: none;
+  padding-top: 5px;
+  text-decoration: none;
+  opacity: 0.6;
+  background-color: black;
+  color: white;
+  border: thin solid white;
+  height: 40px;
+  width: 100px;
+  border-radius: 2px;
+  transition: 0.5s;
+  padding-bottom: 5px;
+}
+
+#gen:hover {
+  background-color: coral;
+  color: black;
+  border: thin solid black;
+  opacity: 0.8;
+}
