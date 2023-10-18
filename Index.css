@@ -63,3 +63,15 @@ p {
 a, u {
   text-decoration: none;
 }
+
+table, th, td {
+  border:1px solid black;
+  text-align: center;
+}
+
+.centeredImage {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+}
