@@ -1,0 +1,12 @@
+body {
+    background-color: #FEE715;
+    margin: 0 auto;
+    padding: 0 20px 20px 20px;
+   }
+  html {
+    font-size: 30px; /* px means "pixels": the base font size is now x pixels high */
+    font-family: 'Londrina Solid'; /* this should be the rest of the output you got from Google Fonts */
+    text-align: center;
+    color:  #101820; 
+  }
+  
