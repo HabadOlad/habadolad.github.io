@@ -114,7 +114,7 @@ var quotes = [
     "Success is stumbling from failure to failure with no loss of enthusiasm",
     "All of old. Nothing else ever. Ever tried. Ever failed. No matter. Try again. Fail again. Fail better",
     "We are all failures- at least the best of us are.",
-    "“I'd rather be partly great than entirely useless.",
+    "I'd rather be partly great than entirely useless.",
     "We are what we pretend to be, so we must be careful what we pretend to be.",
     "How nice -- to feel nothing, and still get full credit for being alive.",
     "Be soft. Do not let the world make you hard. Do not let the pain make you hate. Do not let the bitterness steal your sweetness. Take pride that even though the rest of the world may disagree, you still believe it to be a beautiful place.",
