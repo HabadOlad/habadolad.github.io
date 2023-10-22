@@ -115,6 +115,15 @@ var quotes = [
     "All of old. Nothing else ever. Ever tried. Ever failed. No matter. Try again. Fail again. Fail better",
     "We are all failures- at least the best of us are.",
     "“I'd rather be partly great than entirely useless.",
+    "We are what we pretend to be, so we must be careful what we pretend to be.",
+    "How nice -- to feel nothing, and still get full credit for being alive.",
+    "Be soft. Do not let the world make you hard. Do not let the pain make you hate. Do not let the bitterness steal your sweetness. Take pride that even though the rest of the world may disagree, you still believe it to be a beautiful place.".,
+    "Nobody will stop you from creating. Do it tonight. Do it tomorrow. That is the way to make your soul grow - whether there is a market for it or not! The kick of creation is the act of creating, not anything that happens afterward. I would tell all of you watching this screen: Before you go to bed, write a four line poem. Make it as good as you can. Don't show it to anybody. Put it where nobody will find it. And you will discover that you have your reward.",
+    "We have to continually be jumping off cliffs and developing our wings on the way down.",
+    "Laughing is good exercise. It's like jogging on the inside.",
+    "Laughter and tears are both responses to frustration and exhaustion. I myself prefer to laugh, since there is less cleaning up to do afterward. ",
+    "Always laugh when you can. It is cheap medicine. ",
+    
 
     
 
