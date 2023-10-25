@@ -51,9 +51,14 @@ function changePlayer(){
     // : is otherwise
     // ? is is a one-line shorthand for an if-else statement. It's called the conditional operator.
     statusText.textContent = `${currentPlayer}'s turn`;
+    // this allows us to switch players
 }
 function checkWinner(){
+let roundWon = false;
 
+for (let i = 0; i < winConditions.length; i++){
+    
+}
 }
 
 function restartGame(){
