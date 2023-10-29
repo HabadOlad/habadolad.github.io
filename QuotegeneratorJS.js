@@ -123,6 +123,7 @@ var quotes = [
     "Laughing is good exercise. It's like jogging on the inside.",
     "Laughter and tears are both responses to frustration and exhaustion. I myself prefer to laugh, since there is less cleaning up to do afterward. ",
     "Always laugh when you can. It is cheap medicine. ",
+    "Ars longa, vita brevis, occasio praeceps, experimentum periculosum, iudicium difficile, which in English renders as Life is short, [the] craft long, opportunity fleeting, experiment treacherous, judgment difficult.",
 
 
     
