@@ -125,6 +125,7 @@ var quotes = [
     "Always laugh when you can. It is cheap medicine. ",
     "Ars longa, vita brevis, occasio praeceps, experimentum periculosum, iudicium difficile, which in English renders as Life is short, [the] craft long, opportunity fleeting, experiment treacherous, judgment difficult.",
     "My autobiography written as it's happening. The theme is about staying alive, getting a job, finding a mate, having a place to live, finding a creative outlet. Life is a war of attrition. You have to stay active on all fronts. It's one thing after another. I've tried to control a chaotic universe. And it's a losing battle. But I can't let go. I've tried, but I can't.",
+    "I feel upsettingly de-natured. If Penelope Cruz were one of my nurses, I wouldn't even notice.",
 
     
 
