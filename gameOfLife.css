@@ -1,0 +1,8 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    background-color: #FEE715;
+    font-size: 30px; /* px means "pixels": the base font size is now x pixels high */
+    font-family: 'Londrina Solid'; /* this should be the rest of the output you got from Google Fonts */
+    text-align: center;
+}
