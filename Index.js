@@ -14,5 +14,5 @@ for (i = 0; i < acc.length; i++) {
   });
 }
 
-const d = new Date();
+const d = new Date().setMilliseconds;
 document.getElementById("date").innerHTML = d;
