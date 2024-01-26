@@ -132,6 +132,7 @@ var quotes = [
     "But I saw the pain and sadness in everything, and swirled it round my mouth like a fine wine.",
     "I am a work in progress",
     "My heart's in the right place. I know, cuz I hid it there.",
+    "When action grows unprofitable, gather information; when information grows unprofitable, sleep.",
     
 
 
