@@ -134,6 +134,7 @@ var quotes = [
     "My heart's in the right place. I know, cuz I hid it there.",
     "When action grows unprofitable, gather information; when information grows unprofitable, sleep.",
     "Take a shower, wash off the day. Drink a glass of water. Make the room dark. Lie down and close your eyes. Notice the silence. Notice your heart. Still beating. Still fighting. You made it, after all. You made it, another day. And you can make it one more. You’re doing just fine.",
+    "Depression is like a bruise that never goes away. A bruise in your mind. You just got to be careful not to touch it where it hurts. It’s always there, though.",
     
 
 
