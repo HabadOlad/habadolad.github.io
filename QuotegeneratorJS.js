@@ -138,7 +138,8 @@ var quotes = [
     "Sometimes you have to swim through a bit of darkness if you’re ever going to surface in the light",
     "Perfection is achieved, not when there is nothing more to add, but when there is nothing left to take away.",
     "I tend to find the ecstasy hidden in ordinary joys, because I did not expect those joys to be ordinary to me.",
-    "Life is a collection of short stories strung together for a mega novel. What is your favorite short story in your novel? Write it."
+    "Life is a collection of short stories strung together for a mega novel. What is your favorite short story in your novel? Write it.",
+    "Much of spiritual life is self-acceptance, maybe all of it."
 
     
 
