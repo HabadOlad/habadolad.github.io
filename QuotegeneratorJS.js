@@ -142,6 +142,7 @@ var quotes = [
     "Much of spiritual life is self-acceptance, maybe all of it.",
     "It's so hard to forget pain, but it's even harder to remember sweetness. We have no scar to show for happiness. We learn so little from peace.",
     "I don't want to die without any scars.",
+    "Fairy tales are more than true: not because they tell us that dragons exist, but because they tell us that dragons can be beaten.",
 
     
 
