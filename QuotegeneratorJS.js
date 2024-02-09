@@ -139,7 +139,9 @@ var quotes = [
     "Perfection is achieved, not when there is nothing more to add, but when there is nothing left to take away.",
     "I tend to find the ecstasy hidden in ordinary joys, because I did not expect those joys to be ordinary to me.",
     "Life is a collection of short stories strung together for a mega novel. What is your favorite short story in your novel? Write it.",
-    "Much of spiritual life is self-acceptance, maybe all of it."
+    "Much of spiritual life is self-acceptance, maybe all of it.",
+    "It's so hard to forget pain, but it's even harder to remember sweetness. We have no scar to show for happiness. We learn so little from peace.",
+    "I don't want to die without any scars.",
 
     
 
