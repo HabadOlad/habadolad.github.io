@@ -27,7 +27,10 @@ var quotes = [
     "Mindfulness helps especially for those of us for whom every setback, hurt or dissapointment creates endless cascades of rumination",
     "When we endlessly ruminate over distant times, we miss extraordinary things in the present moment. These extraordinary things are, in actual fact, all we have: the here and now.",
     "But research shows that rumination does exactly the opposite: our ability to solve problems actually deteriorates markedly during rumination",
+    "What are you ruminating on? Old suffering?",
+    "Rumination can also make the depression stronger by creating conditions that are, well, more depressing.",
     
+
 
 
 
