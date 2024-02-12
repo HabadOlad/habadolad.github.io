@@ -29,6 +29,7 @@ var quotes = [
     "But research shows that rumination does exactly the opposite: our ability to solve problems actually deteriorates markedly during rumination",
     "What are you ruminating on? Old suffering?",
     "Rumination can also make the depression stronger by creating conditions that are, well, more depressing.",
+    "excessive ruminating isn't just a type of procrastination. It's actually a form of self-protection.",
     
 
 
