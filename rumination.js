@@ -24,6 +24,10 @@ var quotes = [
     "In fact, whenever a human being genuinely turns to the inner world and tries to know himself—not by ruminating about his subjective thoughts and feelings, but by following the expressions of his own objective nature such as dreams and genuine fantasies—then sooner or later the Self emerges. The ego will then find an inner power that contains all the possibilities of renewal.",
     "My past is trying to catch up to me and I must continue run from it. It's the only way I can live.",
     "Let the past be content with itself, for man needs forgetfulness as well as memory",
+    "Mindfulness helps especially for those of us for whom every setback, hurt or dissapointment creates endless cascades of rumination",
+    "When we endlessly ruminate over distant times, we miss extraordinary things in the present moment. These extraordinary things are, in actual fact, all we have: the here and now.",
+    "But research shows that rumination does exactly the opposite: our ability to solve problems actually deteriorates markedly during rumination",
+    
 
 
 
