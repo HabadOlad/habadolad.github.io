@@ -30,7 +30,9 @@ var quotes = [
     "What are you ruminating on? Old suffering?",
     "Rumination can also make the depression stronger by creating conditions that are, well, more depressing.",
     "excessive ruminating isn't just a type of procrastination. It's actually a form of self-protection.",
+    "Any form of negative rumination - for example, worrying about your financial future or health - will stimulate the release of destructive neurochemicals",
     
+
 
 
 
