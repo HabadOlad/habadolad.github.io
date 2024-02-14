@@ -31,7 +31,16 @@ var quotes = [
     "Rumination can also make the depression stronger by creating conditions that are, well, more depressing.",
     "excessive ruminating isn't just a type of procrastination. It's actually a form of self-protection.",
     "Any form of negative rumination - for example, worrying about your financial future or health - will stimulate the release of destructive neurochemicals",
+    "Man is not worried by real problems so much as by his imagined anxieties about real problems.",
+    "Worry is like a rocking chair: it gives you something to do but never gets you anywhere",
+    "I think and think and think, I've thought myself out of happiness one million times, but never once into it.",
+    "Nothing can harm you as much as your own thoughts unguarded.",
+    "Rule number one is, don’t sweat the small stuff. Rule number two is, it’s all small stuff.",
+    "Everyone does stupid things they regret. I, for one, do them daily. So stop your downward spiral by heaving a big sigh and saying ‘OK, that happened.’ And then move on.",
+    "Overthinking ruins you. Ruins the situation, twists things around, makes you worry and just makes everything much worse than it actually is.",
+    "Thinking about all the things you could have done differently, second-guessing every decision you make, and imagining all the worst-case scenarios in life can be exhausting.",
     
+
 
 
 
