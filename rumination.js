@@ -44,6 +44,8 @@ var quotes = [
     "There is nothing more exhausting than going through the same pattern of negative thoughts over and over again.",
     "Overthinking sometimes involves beating yourself up for the decisions you already made.",
     "If overthinking burned calories, I would be a supermodel.",
+    "We can’t solve our problems with the same level of thinking that created them.",
+    
 
 
 
