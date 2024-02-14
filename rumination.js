@@ -39,7 +39,13 @@ var quotes = [
     "Everyone does stupid things they regret. I, for one, do them daily. So stop your downward spiral by heaving a big sigh and saying ‘OK, that happened.’ And then move on.",
     "Overthinking ruins you. Ruins the situation, twists things around, makes you worry and just makes everything much worse than it actually is.",
     "Thinking about all the things you could have done differently, second-guessing every decision you make, and imagining all the worst-case scenarios in life can be exhausting.",
-    
+    "Life is too short to be spent at war with yourself.",
+    "Perfectionists and overachievers have tendencies to overthink because the fear of failing and the need to be perfect take over.",
+    "There is nothing more exhausting than going through the same pattern of negative thoughts over and over again.",
+    "Overthinking sometimes involves beating yourself up for the decisions you already made.",
+    "If overthinking burned calories, I would be a supermodel.",
+
+
 
 
 
