@@ -143,6 +143,8 @@ var quotes = [
     "It's so hard to forget pain, but it's even harder to remember sweetness. We have no scar to show for happiness. We learn so little from peace.",
     "I don't want to die without any scars.",
     "Fairy tales are more than true: not because they tell us that dragons exist, but because they tell us that dragons can be beaten.",
+    "Heard joke once: Man goes to doctor. Says he's depressed. Says life seems harsh and cruel. Says he feels all alone in a threatening world where what lies ahead is vague and uncertain. Doctor says, 'Treatment is simple. Great clown Pagliacci is in town tonight. Go and see him. That should pick you up.' Man bursts into tears. Says, 'But doctor…I am Pagliacci.' Good joke. Everybody laugh. Roll on snare drum. Curtains.",
+    
 
     
 
