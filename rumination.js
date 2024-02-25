@@ -45,7 +45,9 @@ var quotes = [
     "Overthinking sometimes involves beating yourself up for the decisions you already made.",
     "If overthinking burned calories, I would be a supermodel.",
     "We can’t solve our problems with the same level of thinking that created them.",
-    
+    "Frankly, my dear, I don't give a damn.",
+
+
 
 
 
