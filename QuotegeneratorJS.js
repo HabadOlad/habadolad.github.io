@@ -145,6 +145,7 @@ var quotes = [
     "Fairy tales are more than true: not because they tell us that dragons exist, but because they tell us that dragons can be beaten.",
     "Heard joke once: Man goes to doctor. Says he's depressed. Says life seems harsh and cruel. Says he feels all alone in a threatening world where what lies ahead is vague and uncertain. Doctor says, 'Treatment is simple. Great clown Pagliacci is in town tonight. Go and see him. That should pick you up.' Man bursts into tears. Says, 'But doctor…I am Pagliacci.' Good joke. Everybody laugh. Roll on snare drum. Curtains.",
     "Practice any art, music, singing, dancing, acting, drawing, painting, sculpting, poetry, fiction, essays, reportage, no matter how well or badly, not to get money and fame, but to experience becoming, to find out what’s inside you, to make your soul grow.",
+    "The rain will stop, the night will end, the hurt will fade. Hope is never so lost that it can't be found.",
 
     
 
