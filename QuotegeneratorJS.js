@@ -148,6 +148,8 @@ var quotes = [
     "The rain will stop, the night will end, the hurt will fade. Hope is never so lost that it can't be found.",
     "When you are going through hell, keep on going. Never never never give up.",
     "A person who never made a mistake never tried anything new",
+    "Success is not final, failure is not fatal: it is the courage to continue that counts",
+    
 
     
 
