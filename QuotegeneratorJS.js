@@ -147,6 +147,7 @@ var quotes = [
     "Practice any art, music, singing, dancing, acting, drawing, painting, sculpting, poetry, fiction, essays, reportage, no matter how well or badly, not to get money and fame, but to experience becoming, to find out what’s inside you, to make your soul grow.",
     "The rain will stop, the night will end, the hurt will fade. Hope is never so lost that it can't be found.",
     "When you are going through hell, keep on going. Never never never give up.",
+    "A person who never made a mistake never tried anything new",
 
     
 
