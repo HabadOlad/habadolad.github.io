@@ -37,4 +37,4 @@ document.getElementById('date').innerText = timeString + ' | ' + dateString + ' 
 setInterval(updateClock, 1000);
 
 // Initial call to display the clock immediately
-updateClock();
+//updateClock();
