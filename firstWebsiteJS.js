@@ -25,7 +25,7 @@ function updateClock() {
  
 // Display date
 var dateOptions = { weekday: 'long', year: 'numeric', month: 'long', day: 'numeric' };
-var dateString = currentDate.toLocaleDateString(undefined, dateOptions);
+var dateString = now.toLocaleDateString(undefined, dateOptions);
 
 var timeString = `${hours}:${minutes}:${seconds}`;
 
