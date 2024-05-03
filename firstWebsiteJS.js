@@ -27,6 +27,8 @@ function updateClock() {
 var dateOptions = { weekday: 'long', year: 'numeric', month: 'long', day: 'numeric' };
 var dateString = currentDate.toLocaleDateString(undefined, dateOptions);
 
+var timeString = hours + ':' + minutes + ':' + seconds;
+
 // Display GMT
 var gmtString = "GMT" + (currentDate.getTimezoneOffset() > 0 ? "-" : "+") + (currentDate.getTimezoneOffset() / 60);
 
