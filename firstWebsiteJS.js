@@ -32,7 +32,7 @@ var timeString = hours + ':' + minutes + ':' + seconds;
 // Display GMT
 var gmtString = "GMT" + (currentDate.getTimezoneOffset() > 0 ? "-" : "+") + (currentDate.getTimezoneOffset() / 60);
 
-document.getElementById('date').innerText = timeString + ' | ' + dateString + ' | ' + gmtString;;
+document.getElementById('date').innerText = timeString + ' | ' + dateString + ' | ' + gmtString;
 }
 
 // Call updateClock function every second
