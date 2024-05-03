@@ -22,10 +22,14 @@ function updateClock() {
   // Pad single digit minutes and seconds with leading zeros
   minutes = minutes < 10 ? '0' + minutes : minutes;
   seconds = seconds < 10 ? '0' + seconds : seconds;
+// Display date
+var dateOptions = { weekday: 'long', year: 'numeric', month: 'long', day: 'numeric' };
+var dateString = currentDate.toLocaleDateString(undefined, dateOptions);
 
-  var timeString = hours + ':' + minutes + ':' + seconds;
+// Display GMT
+var gmtString = "GMT" + (currentDate.getTimezoneOffset() > 0 ? "-" : "+") + (currentDate.getTimezoneOffset() / 60);
 
-  document.getElementById('date').innerText = timeString;
+document.getElementById('date').innerText = timeString + ' | ' + dateString + ' | ' + gmtString;;
 }
 
 // Call updateClock function every second
