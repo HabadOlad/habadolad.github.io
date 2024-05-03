@@ -22,6 +22,8 @@ function updateClock() {
   // Pad single digit minutes and seconds with leading zeros
   minutes = minutes < 10 ? '0' + minutes : minutes;
   seconds = seconds < 10 ? '0' + seconds : seconds;
+  var timeString = hours + ':' + minutes + ':' + seconds;
+
 // Display date
 var dateOptions = { weekday: 'long', year: 'numeric', month: 'long', day: 'numeric' };
 var dateString = currentDate.toLocaleDateString(undefined, dateOptions);
