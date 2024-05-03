@@ -27,7 +27,15 @@ function updateClock() {
 
   var timeString = hours + ':' + minutes + ':' + seconds;
 
-  document.getElementById('date').innerText = timeString;
+
+// Display date
+var dateOptions = { weekday: 'long', year: 'numeric', month: 'long', day: 'numeric' };
+var dateString = currentDate.toLocaleDateString(undefined, dateOptions);
+
+// Display GMT
+var gmtString = "GMT" + (currentDate.getTimezoneOffset() > 0 ? "-" : "+") + (currentDate.getTimezoneOffset() / 60);
+
+document.getElementById('date').innerText = timeString + ' | ' + dateString + ' | ' + gmtString;;
 }
 
 // Call updateClock function every second
