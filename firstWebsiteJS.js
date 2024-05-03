@@ -30,7 +30,7 @@ var dateString = now.toLocaleDateString(undefined, dateOptions);
 var timeString = `${hours}:${minutes}:${seconds}`;
 
 // Display GMT
-var gmtString = "GMT" + (now.getTimezoneOffset() > 0 ? "-" : "+") + (now.getTimezoneOffset() / 60);
+var gmtString = "GMT" + (now.getTimezoneOffset() > 0 ? "+" : "-") + Math.abs(now.getTimezoneOffset() / 60);
 
 document.getElementById('date').innerText = timeString + ' | ' + dateString + ' | ' + gmtString;
 }
