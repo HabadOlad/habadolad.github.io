@@ -22,6 +22,13 @@ function updateClock() {
   // Pad single digit minutes and seconds with leading zeros
   minutes = minutes < 10 ? '0' + minutes : minutes;
   seconds = seconds < 10 ? '0' + seconds : seconds;
+
+// Determine if it's AM or PM
+var amPM = hours >= 12 ? 'PM' : 'AM';
+
+// Convert hours to 12-hour format
+hours = hours % 12;
+hours = hours ? hours : 12; // If hours is 0, make it 12
  
 // Display date
 var dateOptions = { weekday: 'long', year: 'numeric', month: 'long', day: 'numeric' };
@@ -32,7 +39,7 @@ var timeString = `${hours}:${minutes}:${seconds}`;
 // Display GMT
 var gmtString = "GMT" + " " + (now.getTimezoneOffset() > 0 ? "-" : "+") + Math.abs(now.getTimezoneOffset() / 60);
 
-document.getElementById('date').innerText = timeString + ' | ' + dateString + ' | ' + gmtString;
+document.getElementById('date').innerText = timeString + amPM + ' | ' + dateString + ' | ' + gmtString;
 }
 
 // Call updateClock function every second
