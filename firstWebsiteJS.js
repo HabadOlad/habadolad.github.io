@@ -40,10 +40,10 @@ if (now.getTimezoneOffset() !== 0) {
   timezoneOffset = Math.abs(now.getTimezoneOffset() / 60)
 }
 let timezonePolarity = now.getTimezoneOffset() > 0 ? "-" : "+"
-const offsetString = !!timezoneOffset ? timezonePolarity + timezone : ''
-// Display GMT
+const offsetString = !!timezoneOffset ? timezonePolarity + timezoneOffset : ''
 var gmtString = `GMT ${offsetString}`;
 
+// Display GMT
 document.getElementById('date').innerText = timeString + amPM + ' | ' + dateString + ' | ' + gmtString;
 }
 
