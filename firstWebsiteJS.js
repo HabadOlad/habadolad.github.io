@@ -35,9 +35,14 @@ var dateOptions = { weekday: 'long', year: 'numeric', month: 'long', day: 'numer
 var dateString = now.toLocaleDateString(undefined, dateOptions);
 
 var timeString = `${hours}:${minutes}:${seconds}`;
-
+let timezoneOffset = 0
+if (now.getTimezoneOffset() !== 0) {
+  timezoneOffset = Math.abs(now.getTimezoneOffset() / 60)
+}
+let timezonePolarity = now.getTimezoneOffset() > 0 ? "-" : "+"
+const offsetString = !!timezoneOffset ? timezonePolarity + timezone : ''
 // Display GMT
-var gmtString = "GMT" + " " + (now.getTimezoneOffset() > 0 ? "-" : "+") + Math.abs(now.getTimezoneOffset() / 60);
+var gmtString = `GMT ${offsetString}`;
 
 document.getElementById('date').innerText = timeString + amPM + ' | ' + dateString + ' | ' + gmtString;
 }
