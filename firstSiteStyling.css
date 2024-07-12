@@ -1,3 +1,10 @@
+@font-face {
+  font-family: 'Londrina Solid';
+  font-size: 30px;
+  src: url('assets/fonts/londrinasolid-regular-webfont.woff'); format:('woff2'),
+       url('assets/fonts/londrinasolid-regular-webfont.woff2'); format:('woff')
+}
+
 body {
     background-color: #FEE715;
     margin: 0 auto;
