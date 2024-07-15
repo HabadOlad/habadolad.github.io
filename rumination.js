@@ -46,6 +46,21 @@ var quotes = [
     "If overthinking burned calories, I would be a supermodel.",
     "We can’t solve our problems with the same level of thinking that created them.",
     "Frankly, my dear, I don't give a damn.",
+    "Worrying how things go wrong doesn’t help things go right.",
+    "You can accept or reject the way you are treated by other people, but until you heal the wounds of your past, you will continue to bleed. You can bandage the bleeding with food, with alcohol, with drugs, with work, with cigarettes, with sex, but eventually, it will all ooze through and stain your life. You must find the strength to open the wounds, stick your hands inside, pull out the core of the pain that is holding you in your past, the memories, and make peace with them.",
+    "The one charm of the past is that it is the past.",
+    "Don't let yesterday use up too much of today.",
+    "The more anger towards the past you carry in your heart, the less capable you are of loving in the present.",
+    "Your past is just a story. And once you realize this it has no power over you.",
+    "We need not destroy the past. It is gone.",
+    "Let go. Why do you cling to pain? There is nothing you can do about the wrongs of yesterday. It is not yours to judge. Why hold on to the very thing which keeps you from hope and love?",
+    "You are not defined by your past. You are prepared by your past.",
+    "No matter how painful your past has been, you have made it through.",
+    "Concentrate the mind on the present moment.",
+    "Thinking too little about things or thinking too much both make us obstinate and fanatical",
+    "We drink the poison our minds pour for us and wonder why we feel sick.",
+    
+
 
 
 
