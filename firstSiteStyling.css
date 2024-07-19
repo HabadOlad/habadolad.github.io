@@ -1,6 +1,7 @@
 @font-face {
   font-family: 'Londrina Solid';
   font-size: 30px;
+  font-display: auto;
   src: url('assets/fonts/londrinasolid-regular-webfont.woff'); format:('woff'),
        url('assets/fonts/londrinasolid-regular-webfont.woff2'); format:('woff2')
 }
