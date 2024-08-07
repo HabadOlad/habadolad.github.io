@@ -149,6 +149,8 @@ var quotes = [
     "When you are going through hell, keep on going. Never never never give up.",
     "A person who never made a mistake never tried anything new",
     "Success is not final, failure is not fatal: it is the courage to continue that counts",
+    "Man cannot remake himself without suffering, for he is both the marble and the sculptor",
+    
     
 
     
