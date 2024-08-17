@@ -1,4 +1,10 @@
-@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Roboto+Slab:wght@100..900&display=swap');
+@font-face {
+    font-family: 'Londrina Solid';
+    font-size: 30px;
+    font-display: auto;
+    src: url('assets/fonts/londrinasolid-regular-webfont.woff'); format:('woff'),
+         url('assets/fonts/londrinasolid-regular-webfont.woff2'); format:('woff2')
+  }
 
 :root {
     --background-color: #FEE715;
