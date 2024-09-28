@@ -150,6 +150,8 @@ var quotes = [
     "A person who never made a mistake never tried anything new",
     "Success is not final, failure is not fatal: it is the courage to continue that counts",
     "Man cannot remake himself without suffering, for he is both the marble and the sculptor",
+    "In three words I can sum up everything I’ve learned about life. It goes on.",
+    "Listen to the people who love you. Believe that they are worth living for even when you don’t believe it. Seek out the memories depression takes away and project them into the future. Be brave; be strong; take your pills. Exercise because it’s good for you even if every step weighs a thousand pounds. Eat when food itself disgusts you. Reason with yourself when you have lost your reason",
     
     
 
