@@ -60,6 +60,8 @@ var quotes = [
     "Thinking too little about things or thinking too much both make us obstinate and fanatical",
     "We drink the poison our minds pour for us and wonder why we feel sick.",
     "It’s important not to be embarrassed by your past. The contradictions are part of what we are.",
+    "Reality is an acquired taste.",
+    
     
 
 
