@@ -154,6 +154,7 @@ var quotes = [
     "Listen to the people who love you. Believe that they are worth living for even when you don’t believe it. Seek out the memories depression takes away and project them into the future. Be brave; be strong; take your pills. Exercise because it’s good for you even if every step weighs a thousand pounds. Eat when food itself disgusts you. Reason with yourself when you have lost your reason",
     "Before you can make a dream come true, you must first have one." ,
     "That voice in your head isn't you. It's a voice you have heard. You have grown up with. You have learned. The best thing about learning is that it is never finished; you can learn a new voice.",
+    "Nothing is quite as beautiful as someone who has survived losing everything and still has a tender heart",
     
     
 
