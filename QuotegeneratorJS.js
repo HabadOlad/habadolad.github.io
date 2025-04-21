@@ -155,6 +155,8 @@ var quotes = [
     "Before you can make a dream come true, you must first have one." ,
     "That voice in your head isn't you. It's a voice you have heard. You have grown up with. You have learned. The best thing about learning is that it is never finished; you can learn a new voice.",
     "Nothing is quite as beautiful as someone who has survived losing everything and still has a tender heart",
+    "My life is nothing but pressure. All pressure. This pressure is like a heaviness. It's always on top of me, this heaviness. It's always there since I'm a kid. Other people wake up in the morning, 'A new day! Ah, up and at 'em!' I wake up, the heaviness is waiting for me nice. Sometimes I even talk to it. I say [adopts cheerful voice] 'Hi, heaviness!' and the heaviness looks back at me, [in an ominous growl] 'Today you're gonna get it good. You'll be drinking early today.'",
+    
     
     
 
