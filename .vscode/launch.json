@@ -9,7 +9,7 @@
             "type": "chrome",
             "request": "launch",
             "name": "Launch Chrome against localhost",
-            "file": "/Users/habadolad/Desktop/habadolad.github.io/index.html"
+            "file": "/Users/habadolad/Desktop/habadolad.github.io/spaceinvaders.html"
         }
     ]
 }
