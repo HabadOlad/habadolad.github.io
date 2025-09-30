@@ -1,6 +1,9 @@
 const inputEl = document.getElementById("input");
 const outputEl = document.getElementById("output");
 
+// Initial description
+outputEl.innerHTML += `<div class="prompt">$></div><div>Welcome to Habad's Interactive Fiction! The commands are: look, north/ south/ east/ west</div><div>${rooms[currentRoom].description}</div>`;
+
 inputEl.focus();
 inputEl.addEventListener("keydown", (event) => {
   if (event.key === "Enter") {
@@ -31,13 +34,14 @@ const rooms = {
 
 function handleCommand(command) {
   let output = "";
+  const lowerCommand = command.toLowerCase().trim();
 
-  switch (command) {
+  switch (lowerCommand) {
     case "look":
       output = rooms[currentRoom].description;
       break;
 
-    case "go north":
+    case "north":
       if (rooms[currentRoom].exits.north) {
         currentRoom = rooms[currentRoom].exits.north;
         output = rooms[currentRoom].description;
@@ -46,7 +50,7 @@ function handleCommand(command) {
       }
       break;
 
-    case "go south":
+    case "south":
       if (rooms[currentRoom].exits.south) {
         currentRoom = rooms[currentRoom].exits.south;
         output = rooms[currentRoom].description;
@@ -55,7 +59,7 @@ function handleCommand(command) {
       }
       break;
 
-    case "go east":
+    case "east":
       if (rooms[currentRoom].exits.east) {
         currentRoom = rooms[currentRoom].exits.east;
         output = rooms[currentRoom].description;
@@ -64,7 +68,7 @@ function handleCommand(command) {
       }
       break;
 
-    case "go west":
+    case "west":
       if (rooms[currentRoom].exits.west) {
         currentRoom = rooms[currentRoom].exits.west;
         output = rooms[currentRoom].description;
@@ -81,4 +85,3 @@ function handleCommand(command) {
 }
 
 // Initial description
-outputEl.innerHTML += `<div class="prompt">$></div><div>Welcome to Habad's Interactive Fiction! The commands are: look, go north/go south/go east/go west</div><div>${rooms[currentRoom].description}</div>`;
