@@ -1,3 +1,5 @@
+const playerName = prompt("what is your name?:");
+
 const inputEl = document.getElementById("input");
 const outputEl = document.getElementById("output");
 
@@ -82,5 +84,5 @@ function handleCommand(command) {
 }
 
 // Initial description
-outputEl.innerHTML += `<div class="prompt">$></div><div>Welcome to Habad's Interactive Fiction! The commands are: look, north/ south/ east/ west</div>`;
+outputEl.innerHTML += `<div class="prompt">$></div><div>Welcome to Habad's Interactive Fiction, ${playerName}! The commands are: look, north/ south/ east/ west</div>`;
 outputEl.innerHTML += `quick tip...always look!`;
