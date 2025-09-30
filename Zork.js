@@ -1,9 +1,6 @@
 const inputEl = document.getElementById("input");
 const outputEl = document.getElementById("output");
 
-// Initial description
-outputEl.innerHTML += `<div class="prompt">$></div><div>Welcome to Habad's Interactive Fiction! The commands are: look, north/ south/ east/ west</div><div>${rooms[currentRoom].description}</div>`;
-
 inputEl.focus();
 inputEl.addEventListener("keydown", (event) => {
   if (event.key === "Enter") {
@@ -85,3 +82,4 @@ function handleCommand(command) {
 }
 
 // Initial description
+outputEl.innerHTML += `<div class="prompt">$></div><div>Welcome to Habad's Interactive Fiction! The commands are: look, north/ south/ east/ west</div><div>${rooms[currentRoom].description}</div>`;
