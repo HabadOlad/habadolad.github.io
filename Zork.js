@@ -82,4 +82,5 @@ function handleCommand(command) {
 }
 
 // Initial description
-outputEl.innerHTML += `<div class="prompt">$></div><div>Welcome to Habad's Interactive Fiction! The commands are: look, north/ south/ east/ west</div><div>${rooms[currentRoom].description}</div>`;
+outputEl.innerHTML += `<div class="prompt">$></div><div>Welcome to Habad's Interactive Fiction! The commands are: look, north/ south/ east/ west</div>`;
+outputEl.innerHTML += `quick tip...always look!`;
