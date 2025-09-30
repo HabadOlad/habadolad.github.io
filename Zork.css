@@ -2,9 +2,10 @@ body,
 html {
   height: 100%;
   margin: 0;
-  font-family: "Courier New", monospace;
-  background-color: #000;
-  color: #00ff00;
+  background-color: #333399;
+  font-family: "VT323", monospace;
+  color: white;
+  font-size: 20px;
 }
 
 #terminal {
@@ -29,6 +30,10 @@ html {
   background: none;
   outline: none;
   color: inherit;
+  /* CHANGE: Use the VT323 font */
+  font-family: "VT323", monospace;
+  /* MATCH the size of the output text */
+  font-size: 25px;
 }
 .field {
   white-space: pre;
