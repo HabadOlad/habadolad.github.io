@@ -3,7 +3,6 @@ const playerName = prompt("what is your name?:");
 const inputEl = document.getElementById("input");
 const outputEl = document.getElementById("output");
 
-inputEl.focus();
 inputEl.addEventListener("keydown", (event) => {
   if (event.key === "Enter") {
     const command = inputEl.value;
