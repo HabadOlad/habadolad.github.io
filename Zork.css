@@ -3,6 +3,11 @@
 
 body,
 html {
+  background-image: repeating-linear-gradient(
+    transparent 0,
+    rgba(0, 0, 0, 0.8) 1px,
+    transparent 2px
+  );
   height: 100%;
   margin: 0;
   /* Dark blue/purple background for a retro theme */
