@@ -1,24 +1,27 @@
 @font-face {
-  font-family: 'Londrina Solid';
+  font-family: "Londrina Solid";
   font-size: 30px;
   font-display: auto;
-  src: url('assets/fonts/londrinasolid-regular-webfont.woff'); format:('woff'),
-       url('assets/fonts/londrinasolid-regular-webfont.woff2'); format:('woff2')
+  src: url("assets/fonts/londrinasolid-regular-webfont.woff");
+  format: ("woff"), url("assets/fonts/londrinasolid-regular-webfont.woff2");
+  format: ("woff2");
+  /* change font */
+  /* no longer relevant*/
 }
 
 body {
-    background-color: #FEE715;
-    margin: 0 auto;
-    padding: 0 20px 20px 20px;
-   }
-  html {
-    font-size: 30px; /* px means "pixels": the base font size is now x pixels high */
-    font-family: 'Londrina Solid'; /* this should be the rest of the output you got from Google Fonts */
-    text-align: center;
-    color:  #101820; 
-  }
+  background-color: #fee715;
+  margin: 0 auto;
+  padding: 0 20px 20px 20px;
+}
+html {
+  font-size: 30px; /* px means "pixels": the base font size is now x pixels high */
+  font-family: "Londrina Solid"; /* this should be the rest of the output you got from Google Fonts */
+  text-align: center;
+  color: #101820;
+}
 /* Aligns the heading text to the center. */
- 
+
 h1 {
   text-align: center;
   font-size: 30px;
@@ -32,8 +35,9 @@ h3 {
   font-size: 25px;
 }
 
-ul, ol {
-font-size: 25px;
+ul,
+ol {
+  font-size: 25px;
 }
 
 p {
@@ -41,8 +45,8 @@ p {
 }
 
 .accordion {
-  background-color: #FEE715;
-  font-family: 'Londrina Solid';
+  background-color: #fee715;
+  font-family: "Londrina Solid";
   color: #101820;
   cursor: pointer;
   padding: 18px;
@@ -54,9 +58,10 @@ p {
   transition: 0.4s;
 }
 
-.active, .accordion:hover {
-  background-color: coral; 
-  border-style:dashed;
+.active,
+.accordion:hover {
+  background-color: coral;
+  border-style: dashed;
 }
 
 .panel {
@@ -67,6 +72,7 @@ p {
   border-style: dashed;
 }
 
-a, u {
+a,
+u {
   text-decoration: none;
 }
