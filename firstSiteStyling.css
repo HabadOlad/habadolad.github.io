@@ -1,34 +1,47 @@
 @font-face {
-  font-family: "Londrina Solid";
+  font-family: "NotoSerif";
   font-size: 30px;
   font-display: auto;
-  src: url("assets/fonts/londrinasolid-regular-webfont.woff");
-  format: ("woff"), url("assets/fonts/londrinasolid-regular-webfont.woff2");
+  src: url("assets/css/fonts/noto-serif/NotoSerif.woff");
+  format: ("woff"), url("assets/css/fonts/noto-serif/NotoSerif.woff2");
   format: ("woff2");
   /* change font */
   /* no longer relevant*/
 }
 
 body {
-  background-color: #fee715;
-  margin: 0 auto;
-  padding: 0 20px 20px 20px;
+  background-color: white;
+  font-family: "NotoSerif";
+  /* Using a single padding value for consistency across the entire page */
+  padding: 20px;
+  margin: 0;
+  text-align: left; /* All text-based elements inherit left alignment */
 }
+
 html {
   font-size: 30px; /* px means "pixels": the base font size is now x pixels high */
-  font-family: "Londrina Solid"; /* this should be the rest of the output you got from Google Fonts */
-  text-align: center;
+  font-family: "NotoSerif";
+  text-align: left;
   color: #101820;
 }
+
 /* Aligns the heading text to the center. */
+/* This comment is misleading, the text-align is set to left below. */
 
 h1 {
-  text-align: center;
+  /* Removed text-align: left; to allow inheritance from body/html, 
+     which is already left. */
   font-size: 30px;
+  /* font-family: "NotoSerif"; - Inherited */
+  /* Add margin-left: 0; to ensure no default browser margin pushes it over */
+  margin-left: 0;
 }
 
 h2 {
   font-size: 30px;
+  /* font-family: "NotoSerif"; - Inherited */
+  /* Add margin-left: 0; to ensure alignment with h1 */
+  margin-left: 0;
 }
 
 h3 {
@@ -38,6 +51,8 @@ h3 {
 ul,
 ol {
   font-size: 25px;
+  margin-left: 0; /* Add margin-left: 0; for alignment */
+  padding-left: 40px; /* Keep some padding for list markers/numbers if needed */
 }
 
 p {
@@ -45,14 +60,14 @@ p {
 }
 
 .accordion {
-  background-color: #fee715;
-  font-family: "Londrina Solid";
+  background-color: white;
+  font-family: "NotoSerif";
   color: #101820;
   cursor: pointer;
   padding: 18px;
   width: 100%;
   border: none;
-  text-align: center;
+  text-align: left;
   outline: none;
   font-size: 30px;
   transition: 0.4s;
@@ -60,14 +75,12 @@ p {
 
 .active,
 .accordion:hover {
-  background-color: coral;
-  border-style: dashed;
+  font-style: italic;
 }
 
 .panel {
   padding: 0 18px;
   display: none;
-  background-color: coral;
   overflow: hidden;
   border-style: dashed;
 }
