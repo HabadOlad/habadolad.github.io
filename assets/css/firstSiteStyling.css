@@ -2,9 +2,8 @@
   font-family: "NotoSerif";
   font-size: 30px;
   font-display: auto;
-  src: url("assets/css/fonts/noto-serif/NotoSerif.woff");
-  format: ("woff"), url("assets/css/fonts/noto-serif/NotoSerif.woff2");
-  format: ("woff2");
+  src: url("assets/css/fonts/noto-serif/NotoSerif.woff2") format("woff2"),
+    url("assets/css/fonts/noto-serif/NotoSerif.woff") format("woff");
   /* fontface allows me to host my own fonts */
   /* Once a font is saved into the assets/css/fonts */
 }

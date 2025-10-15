@@ -55,9 +55,9 @@ function updateClock() {
     "©2025 Habad Olad. All rights reserved. " +
     timeString +
     amPM +
-    "  " +
+    " | " +
     dateString +
-    "  " +
+    " | " +
     gmtString;
 }
 
