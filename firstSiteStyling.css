@@ -12,6 +12,7 @@
 body {
   background-color: white;
   font-family: "NotoSerif";
+  font-size: 50px;
   /* Using a single padding value for consistency across the entire page */
   padding: 20px;
   margin: 0;
@@ -27,15 +28,6 @@ html {
 
 /* Aligns the heading text to the center. */
 /* This comment is misleading, the text-align is set to left below. */
-
-h1 {
-  /* Removed text-align: left; to allow inheritance from body/html, 
-     which is already left. */
-  font-size: 30px;
-  /* font-family: "NotoSerif"; - Inherited */
-  /* Add margin-left: 0; to ensure no default browser margin pushes it over */
-  margin-left: 0;
-}
 
 h2 {
   font-size: 30px;
@@ -69,7 +61,8 @@ p {
   border: none;
   text-align: left;
   outline: none;
-  font-size: 30px;
+  font-size: 60px;
+  font-weight: bold;
   transition: 0.4s;
 }
 
@@ -79,10 +72,9 @@ p {
 }
 
 .panel {
-  padding: 0 18px;
+  padding: 20px;
   display: none;
   overflow: hidden;
-  border-style: dashed;
 }
 
 a,
