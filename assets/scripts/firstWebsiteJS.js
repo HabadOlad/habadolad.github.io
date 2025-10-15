@@ -52,7 +52,7 @@ function updateClock() {
 
   // Display GMT
   document.getElementById("date").innerText =
-    "Habad Olad " + timeString + amPM + " | " + dateString + " | " + gmtString;
+    "@Habad Olad " + timeString + amPM + " | " + dateString + " | " + gmtString;
 }
 
 // Call updateClock function every second
