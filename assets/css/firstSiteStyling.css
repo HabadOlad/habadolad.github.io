@@ -1,5 +1,5 @@
 @font-face {
-  font-family: "ApercuMonPro";
+  font-family: "Apercu Mono Pro";
   src: url("") format("woff2"), url("") format("woff");
   /* fontface allows me to host my own fonts */
   /* Once a font is saved into the assets/css/fonts */
