@@ -52,13 +52,7 @@ function updateClock() {
 
   // Display GMT
   document.getElementById("date").innerText =
-    "©2025 Habad Olad. All rights reserved. " +
-    timeString +
-    amPM +
-    " | " +
-    dateString +
-    " | " +
-    gmtString;
+    "London, UK " + timeString + amPM + "  " + dateString + "  " + gmtString;
 }
 
 // Call updateClock function every second

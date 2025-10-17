@@ -1,15 +1,13 @@
 @font-face {
-  font-family: "NotoSerif";
-  font-size: 30px;
-  font-display: auto;
-  src: url("assets/css/fonts/noto-serif/NotoSerif.woff2") format("woff2"),
-    url("assets/css/fonts/noto-serif/NotoSerif.woff") format("woff");
+  font-family: "ApercuMonPro";
+  src: url("") format("woff2"), url("") format("woff");
   /* fontface allows me to host my own fonts */
   /* Once a font is saved into the assets/css/fonts */
 }
 
 body {
   background-color: white;
+  font: inherit;
   font-family: "NotoSerif";
   /* Using a single padding value for consistency across the entire page */
   padding: 7.5px;
@@ -29,4 +27,5 @@ ul {
 /* This comment is misleading, the text-align is set to left below. */
 ul li:hover {
   font-style: italic;
+  color: #00ff00;
 }
