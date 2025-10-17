@@ -1,14 +1,19 @@
 @font-face {
   font-family: "Apercu Mono Pro";
-  src: url("") format("woff2"), url("") format("woff");
-  /* fontface allows me to host my own fonts */
-  /* Once a font is saved into the assets/css/fonts */
+  /*
+    Ensure this path is correct relative to the CSS file
+    and that the file is actually a .woff format (or change format() to "woff")
+    If you have the .woff2 file, use that instead for better compression.
+  */
+  src: url("assets/css/fonts/font (1)/ApercuMonoPro-Medium.woff") format("woff");
+  src: url("assets/css/fonts/font (1)/ApercuMonoPro-Medium.woff")
+    format("woff2");
 }
 
 body {
   background-color: white;
-  font: inherit;
-  font-family: "NotoSerif";
+  /* Use only font-family and include a generic fallback */
+  font-family: "Apercu Mono Pro", monospace;
   /* Using a single padding value for consistency across the entire page */
   padding: 7.5px;
   margin: 0;
@@ -19,8 +24,10 @@ body {
 ul {
   list-style-type: none;
   padding-inline-start: 0px;
+  font: "Apercu Mono Pro";
+  font-family: "Apercu Mono Pro", monospace;
   text-align: left;
-  font-size: 70px;
+  font-size: 85px;
   font-weight: 350;
 }
 /* Aligns the heading text to the center. */
