@@ -10,6 +10,11 @@
     format("woff2");
 }
 
+* {
+  font-family: "Apercu Mono Pro", monospace;
+  font: "Apercu Mono Pro";
+}
+
 body {
   background-color: white;
   /* Use only font-family and include a generic fallback */
