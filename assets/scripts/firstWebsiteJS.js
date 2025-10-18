@@ -1,17 +1,13 @@
-var acc = document.getElementsByClassName("accordion");
-var i;
-
-for (i = 0; i < acc.length; i++) {
-  acc[i].addEventListener("click", function () {
-    this.classList.toggle("active");
-    var panel = this.nextElementSibling;
-    if (panel.style.display === "block") {
-      panel.style.display = "none";
-    } else {
-      panel.style.display = "block";
-    }
-  });
-}
+const navigation = document.getElementById("navigation");
+navigation.innerHTML = `  <ul>
+<li><a>Habad Olad</a></li>
+<li><a>Portfolio</a></li>
+<li><a>Projects</a></li>
+<li><a>Blog</a></li>
+<li><a>Contact</a></li>
+<li id="date"></li>
+</ul>
+<footer>©2025 Habad Olad. All rights reserved.</footer>`;
 
 function updateClock() {
   var now = new Date();
