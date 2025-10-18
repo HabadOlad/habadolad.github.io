@@ -15,7 +15,14 @@
   font: "Apercu Mono Pro";
 }
 
-/* CSS */
+#quoteDisplay {
+  /* Set left and right margins to 'auto' to horizontally center it */
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+  font-size: 30px;
+}
+
 .button {
   font-size: 16px;
   font-weight: 200;
