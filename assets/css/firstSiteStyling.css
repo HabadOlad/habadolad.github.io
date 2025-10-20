@@ -46,3 +46,7 @@ ul li {
 ul li:hover {
   color: #00ff00;
 }
+
+p {
+  text-align: center;
+}
