@@ -5,7 +5,6 @@
     and that the file is actually a .woff format (or change format() to "woff")
     If you have the .woff2 file, use that instead for better compression.
   */
-  src: url("assets/css/fonts/font (1)/ApercuMonoPro-Medium.woff") format("woff");
   src: url("assets/css/fonts/font (1)/ApercuMonoPro-Medium.woff")
     format("woff2");
 }
@@ -35,9 +34,15 @@ ul {
   font-size: 70px;
   font-weight: 350;
 }
-/* Aligns the heading text to the center. */
-/* This comment is misleading, the text-align is set to left below. */
+
+/* * Apply the transition property to the base state (ul li).
+ * This tells the browser to animate the 'color' and 'font-style' changes 
+ * over half a second (0.5s) when the hover state is entered or left.
+ */
+ul li {
+  transition: color 0.5s ease-in-out, font-style 0.5s ease-in-out;
+}
+
 ul li:hover {
-  font-style: italic;
   color: #00ff00;
 }

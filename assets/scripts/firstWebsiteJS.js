@@ -1,10 +1,10 @@
 const navigation = document.getElementById("navigation");
 navigation.innerHTML = `  <ul>
-<li><a>Habad Olad</a></li>
-<li><a>Portfolio</a></li>
-<li><a>Projects</a></li>
-<li><a>Blog</a></li>
-<li><a>Contact</a></li>
+<li><a>HABAD OLAD</a></li>
+<li><a>PORTFOLIO</a></li>
+<li><a>PROJECTS</a></li>
+<li><a>BLOG</a></li>
+<li><a>CONTACT</a></li>
 <li id="date"></li>
 </ul>
 <footer>©2025 Habad Olad. All rights reserved.</footer>`;
@@ -33,7 +33,7 @@ function updateClock() {
     month: "long",
     day: "numeric",
   };
-  var dateString = now.toLocaleDateString(undefined, dateOptions);
+  var dateString = now.toLocaleDateString(undefined, dateOptions).toUpperCase();
 
   var timeString = `${hours}:${minutes}:${seconds}`;
   let timezoneOffset = 0;
@@ -48,7 +48,7 @@ function updateClock() {
 
   // Display GMT
   document.getElementById("date").innerText =
-    "London, UK " + timeString + amPM + "  " + dateString + "  " + gmtString;
+    "LONDON, UK " + timeString + amPM + "  " + dateString + "  " + gmtString;
 }
 
 // Call updateClock function every second
