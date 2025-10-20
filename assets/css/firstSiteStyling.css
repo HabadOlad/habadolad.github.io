@@ -15,7 +15,7 @@
 }
 
 body {
-  background-color: white;
+  background-color: #fafafa;
   /* Use only font-family and include a generic fallback */
   font-family: "Apercu Mono Pro", monospace;
   /* Using a single padding value for consistency across the entire page */
