@@ -25,6 +25,9 @@ body {
   color: black;
 }
 
+img {
+}
+
 ul {
   list-style-type: none;
   padding-inline-start: 0px;
@@ -49,4 +52,13 @@ ul li:hover {
 
 p {
   text-align: center;
+}
+
+.image-with-caption {
+  /* Moves the element to the right, allowing text to wrap on the left */
+  float: right;
+
+  /* Add space between the image and the text */
+  margin-left: 20px;
+  margin-bottom: 20px;
 }
