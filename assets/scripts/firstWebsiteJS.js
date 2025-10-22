@@ -23,6 +23,26 @@ aboutTheAuthor.innerHTML = `
 <p>Habad Olad holds a Msc in Environmental Technology from Imperial College London and a Bsc in Geography and Geology from the University of Hull.</p>
 </div>`;
 
+const portfolio = document.getElementById("portfolio");
+portfolio.innerHTML = `<div id="portfolio-section">
+portfolio coming soon!
+</div>`;
+
+const projects = document.getElementById("projects");
+projects.innerHTML = `<div id="project-section">
+projects coming soon!
+</div>`;
+
+const blog = document.getElementById("blog");
+blog.innerHTML = `<div id="blog-section">
+blog coming soon!
+</div>`;
+
+const contact = document.getElementById("contact");
+contact.innerHTML = `<div id="contact-section">
+ccontact page oming soon!
+</div>`;
+
 const footer = document.getElementById("footer");
 footer.innerHTML = `<footer>©2025 Habad Olad. All rights reserved.</footer>`;
 
