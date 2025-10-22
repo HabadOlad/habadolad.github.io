@@ -1,15 +1,16 @@
 const navigation = document.getElementById("navigation");
 navigation.innerHTML = `  <ul>
-<li><a>HABAD OLAD</a></li>
-<li><a>PORTFOLIO</a></li>
-<li><a>PROJECTS</a></li>
-<li><a>BLOG</a></li>
-<li><a>CONTACT</a></li>
+<li><a href="#bio-section" >HABAD OLAD</a></li>
+<li><a href="#portfolio-section">PORTFOLIO</a></li>
+<li><a href="#project-section" >PROJECTS</a></li>
+<li><a href="#blog-section">BLOG</a></li>
+<li><a href="#contact-section">CONTACT</a></li>
 <li id="date"></li>
 </ul>`;
 
 const aboutTheAuthor = document.getElementById("aboutTheAuthor");
-aboutTheAuthor.innerHTML = ` <section class="about-text is-hidden" id="about-section">
+aboutTheAuthor.innerHTML = ` 
+<div id="bio-section">
 <div class="image-with-caption">
 <img src="assets/images/mestaringatarainbow.jpeg" alt="Me staring at a rainbow">
 <figcaption>Me (the author) staring at a rainbow!</figcaption>
@@ -20,7 +21,7 @@ aboutTheAuthor.innerHTML = ` <section class="about-text is-hidden" id="about-sec
 <p>My earliest programming experience was with Neopets back in the 90's/early 2000s. I initially would make mini websites for my neopets and change the colour of the font with html. For some odd reason I never pursued this further and veered away from the programming and had a passion for the environment. I always felt intimidated by programmers, thinking they were mathematical savants but it was just insecurity on my part. I studied geography as an undergrad and a masters in environmental technology. My first job was in consulting, although rewarding I knew it was not my forte. I moved onto data analytics which meant I had to learn python to manipulate CSV files and create graphs using matplotlib/numpy/seaborn (and a little bit of VB basic!). This reinvigorated my passion for code. This website not only showcases my skill with html, css and javascript it's also an aide with a plethora of links, motivational quotes and fun little games!</p>
 
 <p>Habad Olad holds a Msc in Environmental Technology from Imperial College London and a Bsc in Geography and Geology from the University of Hull.</p>
-</section>`;
+</div>`;
 
 const footer = document.getElementById("footer");
 footer.innerHTML = `<footer>©2025 Habad Olad. All rights reserved.</footer>`;

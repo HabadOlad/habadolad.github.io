@@ -9,6 +9,10 @@
     format("woff2");
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 * {
   font-family: "Apercu Mono Pro", monospace;
   font: "Apercu Mono Pro";
@@ -26,6 +30,7 @@ body {
 }
 
 img {
+  /* Need to make the img go green when i hover over it*/
 }
 
 ul {
@@ -61,4 +66,34 @@ p {
   /* Add space between the image and the text */
   margin-left: 20px;
   margin-bottom: 20px;
+}
+
+/* Target all anchor tags inside the navigation list */
+ul li a {
+  /* * 1. Remove the underline from the link.
+   */
+  text-decoration: none;
+
+  /* * 2. Force the link color to inherit the color 
+   * of its parent (the <li> or <ul>). 
+   * If the parent text is black, the link will be black.
+   */
+  color: inherit;
+}
+
+/* * Optional: Style for when the user hovers over the link.
+* It's good practice to provide a visual cue that it's clickable.
+* You can remove this block if you want absolutely no change.
+*/
+ul li a:hover {
+  /* For example, make it slightly lighter/darker or add a subtle effect */
+  opacity: 0.8;
+  /* Or, if the other list items change color on hover, use that color */
+  /* color: #FF0000; */
+}
+
+/* Optional: Style for a link that has been "visited" (clicked before) */
+ul li a:visited {
+  /* Set visited links to the same color as unvisited links to keep a consistent look */
+  color: inherit;
 }
