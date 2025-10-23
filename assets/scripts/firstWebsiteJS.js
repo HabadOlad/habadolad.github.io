@@ -40,7 +40,7 @@ blog coming soon!
 
 const contact = document.getElementById("contact");
 contact.innerHTML = `<div id="contact-section">
-ccontact page oming soon!
+contact page coming soon!
 </div>`;
 
 const footer = document.getElementById("footer");
