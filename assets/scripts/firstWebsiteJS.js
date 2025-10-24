@@ -25,17 +25,19 @@ aboutTheAuthor.innerHTML = `
 
 const portfolio = document.getElementById("portfolio");
 portfolio.innerHTML = `<div id="portfolio-section">
+<p> I enjoy building dynamic, creative products from start to finish. Focused on developing intuitive experiences that constantly grow and improve based on user metrics. Always shipping.<p>
 portfolio coming soon!
 </div>`;
 
 const projects = document.getElementById("projects");
 projects.innerHTML = `<div id="project-section">
-projects coming soon!
+I'd like to consider my projects <i> personal </i> and <b> fun </b> so this section links to my fun little programs, I truly believe the best way to learn programming is make silly software 
 </div>`;
 
 const blog = document.getElementById("blog");
 blog.innerHTML = `<div id="blog-section">
 blog coming soon!
+blog made with flask!
 </div>`;
 
 const contact = document.getElementById("contact");
