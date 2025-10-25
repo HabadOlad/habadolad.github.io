@@ -45,6 +45,11 @@ contact.innerHTML = `<div id="contact-section">
 contact page coming soon!
 </div>`;
 
+const navigationFooter = document.getElementById("navigationFooter");
+navigationFooter.innerHTML = `<a href="#navigation" id="back-to-top-link">
+<img class="navigationarrow" src="assets/images/arrow-up-svgrepo-com.svg" alt="Back to Top Arrow">
+</a>`;
+
 const footer = document.getElementById("footer");
 footer.innerHTML = `<footer> &copy; ${new Date().getFullYear()} Habad Olad. All rights reserved.</footer>`;
 
