@@ -47,6 +47,7 @@ contact page coming soon!
 
 const navigationFooter = document.getElementById("navigationFooter");
 navigationFooter.innerHTML = `<a href="#navigation" id="back-to-top-link">
+<span class="tooltip-text">Go home!</span>
 <img class="navigationarrow" src="assets/images/arrow-up-svgrepo-com.svg" alt="Back to Top Arrow">
 </a>`;
 
