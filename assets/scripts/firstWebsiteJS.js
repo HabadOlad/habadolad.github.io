@@ -46,7 +46,7 @@ contact page coming soon!
 </div>`;
 
 const footer = document.getElementById("footer");
-footer.innerHTML = `<footer>©2025 Habad Olad. All rights reserved.</footer>`;
+footer.innerHTML = `<footer> &copy; ${new Date().getFullYear()} Habad Olad. All rights reserved.</footer>`;
 
 function updateClock() {
   var now = new Date();
