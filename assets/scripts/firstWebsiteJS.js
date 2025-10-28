@@ -1,55 +1,12 @@
 const navigation = document.getElementById("navigation");
 navigation.innerHTML = `  <ul>
-<li><a href="#bio-section" >HABAD OLAD</a></li>
-<li><a href="#portfolio-section">PORTFOLIO</a></li>
-<li><a href="#project-section" >PROJECTS</a></li>
-<li><a href="#blog-section">BLOG</a></li>
-<li><a href="#contact-section">CONTACT</a></li>
+<li>HABAD OLAD</li>
+<li>PORTFOLIO</li>
+<li>PROJECTS</li>
+<li>BLOG</li>
+<li>CONTACT</li>
 <li id="date"></li>
 </ul>`;
-
-const aboutTheAuthor = document.getElementById("aboutTheAuthor");
-aboutTheAuthor.innerHTML = ` 
-<div id="bio-section">
-<div class="image-with-caption">
-<img src="assets/images/mestaringatarainbow.jpeg" alt="Me staring at a rainbow">
-<figcaption>Me (the author) staring at a rainbow!</figcaption>
-</div>
-
-<p>Currently living my dream job as a software engineer! Prior I was a qualified tutor and postgraduate researcher with a background in consulting. Worked on the UK’s most high-profile infrastructure developments such as High Speed 2 and Heathrow terminal expansion. Skilled in creating positive relationships with customers and stakeholders. Experienced in data analytics, tutoring, project management, database administration and consulting.</p>
-
-<p>My earliest programming experience was with Neopets back in the 90's/early 2000s. I initially would make mini websites for my neopets and change the colour of the font with html. For some odd reason I never pursued this further and veered away from the programming and had a passion for the environment. I always felt intimidated by programmers, thinking they were mathematical savants but it was just insecurity on my part. I studied geography as an undergrad and a masters in environmental technology. My first job was in consulting, although rewarding I knew it was not my forte. I moved onto data analytics which meant I had to learn python to manipulate CSV files and create graphs using matplotlib/numpy/seaborn (and a little bit of VB basic!). This reinvigorated my passion for code. This website not only showcases my skill with html, css and javascript it's also an aide with a plethora of links, motivational quotes and fun little games!</p>
-
-<p>Habad Olad holds a Msc in Environmental Technology from Imperial College London and a Bsc in Geography and Geology from the University of Hull.</p>
-</div>`;
-
-const portfolio = document.getElementById("portfolio");
-portfolio.innerHTML = `<div id="portfolio-section">
-<p> I enjoy building dynamic, creative products from start to finish. Focused on developing intuitive experiences that constantly grow and improve based on user metrics. Always shipping.<p>
-portfolio coming soon!
-</div>`;
-
-const projects = document.getElementById("projects");
-projects.innerHTML = `<div id="project-section">
-I'd like to consider my projects <i> personal </i> and <b> fun </b> so this section links to my fun little programs, I truly believe the best way to learn programming is make silly software 
-</div>`;
-
-const blog = document.getElementById("blog");
-blog.innerHTML = `<div id="blog-section">
-blog coming soon!
-blog made with flask!
-</div>`;
-
-const contact = document.getElementById("contact");
-contact.innerHTML = `<div id="contact-section">
-contact page coming soon!
-</div>`;
-
-const navigationFooter = document.getElementById("navigationFooter");
-navigationFooter.innerHTML = `<a href="#navigation" id="back-to-top-link">
-<span class="tooltip-text">Go home!</span>
-<img class="navigationarrow" src="assets/images/arrow-up-svgrepo-com.svg" alt="Back to Top Arrow">
-</a>`;
 
 const footer = document.getElementById("footer");
 footer.innerHTML = `<footer> &copy; ${new Date().getFullYear()} Habad Olad. All rights reserved.</footer>`;
