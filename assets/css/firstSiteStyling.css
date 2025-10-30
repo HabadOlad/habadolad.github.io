@@ -30,7 +30,11 @@ body {
 }
 
 img {
-  /* Need to make the img go green when i hover over it*/
+  transition: filter 0.5s ease-in-out;
+}
+
+img:hover {
+  filter: sepia(100%) saturate(2000%) hue-rotate(90deg);
 }
 
 ul {
