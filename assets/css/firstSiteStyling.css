@@ -33,7 +33,7 @@ body {
   background-color: white;
   color: black;
   cursor: pointer;
-  padding: 18px;
+  padding: 5px 18px;
   width: 100%;
   text-align: left;
   border: none;
@@ -51,11 +51,20 @@ body {
 
 /* Style the accordion panel. Note: hidden by default */
 .panel {
+  /* 1. Sets minimal vertical padding (0px top/bottom) */
   padding: 5px 18px;
   background-color: white;
   display: none;
   overflow: hidden;
-  line-height: 1;
+  /* (Note: display: flex will be on the inner wrapper, not the panel itself) */
+}
+
+/* Rule for the text inside the panel */
+.panel p {
+  /* 2. Removes default top/bottom margin from paragraph element */
+  margin: 0;
+  /* 3. Tightens the spacing between lines of text */
+  line-height: 2;
 }
 
 /* Style the figure element */
