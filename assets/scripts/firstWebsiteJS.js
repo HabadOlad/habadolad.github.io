@@ -1,12 +1,21 @@
-const navigation = document.getElementById("navigation");
-navigation.innerHTML = `  <ul>
-<li>HABAD OLAD</li>
-<li>PORTFOLIO</li>
-<li>PROJECTS</li>
-<li>BLOG</li>
-<li>CONTACT</li>
-<li id="date"></li>
-</ul>`;
+var acc = document.getElementsByClassName("accordion");
+var i;
+
+for (i = 0; i < acc.length; i++) {
+  acc[i].addEventListener("click", function () {
+    /* Toggle between adding and removing the "active" class,
+    to highlight the button that controls the panel */
+    this.classList.toggle("active");
+
+    /* Toggle between hiding and showing the active panel */
+    var panel = this.nextElementSibling;
+    if (panel.style.display === "block") {
+      panel.style.display = "none";
+    } else {
+      panel.style.display = "block";
+    }
+  });
+}
 
 const footer = document.getElementById("footer");
 footer.innerHTML = `<footer> &copy; ${new Date().getFullYear()} Habad Olad. All rights reserved.</footer>`;
@@ -49,7 +58,7 @@ function updateClock() {
   var gmtString = `GMT ${offsetString}`;
 
   // Display GMT
-  document.getElementById("date").innerText =
+  document.getElementById("clock").innerText =
     "LONDON, UK " + timeString + amPM + "  " + dateString + "  " + gmtString;
 }
 

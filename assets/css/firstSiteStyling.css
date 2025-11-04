@@ -19,7 +19,7 @@ html {
 }
 
 body {
-  background-color: #fafafa;
+  background-color: white;
   /* Use only font-family and include a generic fallback */
   font-family: "Apercu Mono Pro", monospace;
   /* Using a single padding value for consistency across the entire page */
@@ -29,36 +29,31 @@ body {
   color: black;
 }
 
-img {
-  transition: filter 0.5s ease-in-out;
-}
-
-img:hover {
-  filter: sepia(100%) saturate(2000%) hue-rotate(90deg);
-}
-
-ul {
-  list-style-type: none;
-  padding-inline-start: 0px;
-  font: "Apercu Mono Pro";
-  font-family: "Apercu Mono Pro", monospace;
+.accordion {
+  background-color: white;
+  color: black;
+  cursor: pointer;
+  padding: 18px;
+  width: 100%;
   text-align: left;
+  border: none;
+  outline: none;
+  transition: 0.4s;
   font-size: 70px;
-  font-weight: 350;
 }
 
-/* * Apply the transition property to the base state (ul li).
- * This tells the browser to animate the 'color' and 'font-style' changes 
- * over half a second (0.5s) when the hover state is entered or left.
- */
-ul li {
-  transition: color 0.5s ease-in-out, font-style 0.5s ease-in-out;
-}
-
-ul li:hover {
+/* Add a background color to the button if it is clicked on (add the .active class with JS), and when you move the mouse over it (hover) */
+.active,
+.accordion:hover {
+  background-color: transparent;
   color: #00ff00;
 }
 
-p {
-  text-align: left;
+/* Style the accordion panel. Note: hidden by default */
+.panel {
+  padding: 5px 18px;
+  background-color: white;
+  display: none;
+  overflow: hidden;
+  line-height: 1;
 }
