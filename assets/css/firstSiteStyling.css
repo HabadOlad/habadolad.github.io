@@ -57,3 +57,36 @@ body {
   overflow: hidden;
   line-height: 1;
 }
+
+/* Style the figure element */
+.panel-content-wrapper .image-with-caption {
+  /* Remove default figure margin and set max width */
+  margin: 0;
+  max-width: 30%; /* Sets the size for the image/caption block */
+  flex-shrink: 0;
+}
+
+.panel-content-wrapper img {
+  /* Ensure image fills the figure width */
+  max-width: 100%;
+  height: auto;
+  display: block; /* Removes any default space below the image */
+}
+
+.panel-content-wrapper figcaption {
+  /* Adjust caption styling if needed */
+  font-size: small;
+  text-align: center;
+}
+
+/* Existing Flexbox Rule */
+.panel-content-wrapper {
+  display: flex;
+  gap: 20px;
+  align-items: flex-start;
+}
+/* ... (rest of your existing CSS) ... */
+/* Style the Text Container */
+.text-content {
+  flex-grow: 1; /* Allows the text to take up the remaining space */
+}
