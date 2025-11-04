@@ -58,8 +58,15 @@ function updateClock() {
   var gmtString = `GMT ${offsetString}`;
 
   // Display GMT
-  document.getElementById("clock").innerText =
-    "LONDON, UK " + timeString + amPM + "  " + dateString + "  " + gmtString;
+  document.getElementById("clock").innerHTML =
+    "LONDON, UK " +
+    timeString +
+    amPM +
+    "<br>" +
+    "  " +
+    dateString +
+    "  " +
+    gmtString;
 }
 
 // Call updateClock function every second
