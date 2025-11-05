@@ -1,11 +1,9 @@
 @font-face {
-  font-family: "Adesso-Bold";
-  /*
-    Ensure this path is correct relative to the CSS file
-    and that the file is actually a .woff format (or change format() to "woff")
-    If you have the .woff2 file, use that instead for better compression.
-  */
-  src: url("assets/css/fonts/font (1)/Adesso-Bold.woff") format("woff2");
+  font-family: "Adesso"; /* Use the core family name */
+  font-weight: 700; /* Map this file to the 'bold' weight */
+  font-style: normal;
+  src: url("fonts/font (1)/Adesso-Bold.woff2") format("woff2"),
+    url("fonts/font (1)/Adesso-Bold.woff") format("woff");
 }
 
 html {
@@ -13,14 +11,13 @@ html {
 }
 
 * {
-  font-family: "Adesso-Bold";
-  font: "Apercu Mono Pro";
+  font-family: "Adesso";
 }
 
 body {
   background-color: #efdba8;
   /* Use only font-family and include a generic fallback */
-  font-family: "Adesso-Bold", sans-serif;
+  font-family: "Adesso";
   /* Using a single padding value for consistency across the entire page */
   padding: 7.5px;
   margin: 0;
@@ -39,7 +36,7 @@ body {
   outline: none;
   transition: 0.4s;
   font-size: 70px;
-  font-family: "Adesso-Bold", sans-serif;
+  font-family: "Adesso";
 }
 
 /* Add a background color to the button if it is clicked on (add the .active class with JS), and when you move the mouse over it (hover) */
