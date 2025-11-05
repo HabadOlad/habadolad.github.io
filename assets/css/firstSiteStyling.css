@@ -20,7 +20,7 @@ html {
 body {
   background-color: #efdba8;
   /* Use only font-family and include a generic fallback */
-  font-family: "Adesso-Bold", monospace;
+  font-family: "Adesso-Bold", sans-serif;
   /* Using a single padding value for consistency across the entire page */
   padding: 7.5px;
   margin: 0;
@@ -39,6 +39,7 @@ body {
   outline: none;
   transition: 0.4s;
   font-size: 70px;
+  font-family: "Adesso-Bold", sans-serif;
 }
 
 /* Add a background color to the button if it is clicked on (add the .active class with JS), and when you move the mouse over it (hover) */
