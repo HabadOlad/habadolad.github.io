@@ -1,12 +1,11 @@
 @font-face {
-  font-family: "Apercu Mono Pro";
+  font-family: "Adesso-Bold";
   /*
     Ensure this path is correct relative to the CSS file
     and that the file is actually a .woff format (or change format() to "woff")
     If you have the .woff2 file, use that instead for better compression.
   */
-  src: url("assets/css/fonts/font (1)/ApercuMonoPro-Medium.woff")
-    format("woff2");
+  src: url("assets/css/fonts/font (1)/Adesso-Bold.woff") format("woff2");
 }
 
 html {
@@ -14,14 +13,14 @@ html {
 }
 
 * {
-  font-family: "Apercu Mono Pro", monospace;
+  font-family: "Adesso-Bold";
   font: "Apercu Mono Pro";
 }
 
 body {
-  background-color: white;
+  background-color: #efdba8;
   /* Use only font-family and include a generic fallback */
-  font-family: "Apercu Mono Pro", monospace;
+  font-family: "Adesso-Bold", monospace;
   /* Using a single padding value for consistency across the entire page */
   padding: 7.5px;
   margin: 0;
@@ -30,7 +29,7 @@ body {
 }
 
 .accordion {
-  background-color: white;
+  background-color: #efdba8;
   color: black;
   cursor: pointer;
   padding: 5px 18px;
