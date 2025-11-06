@@ -143,3 +143,33 @@ h1 {
 .tooltip-trigger.show-photo .tooltip-photo {
   display: block !important; /* Forces visibility on click, overriding the hover/default */
 }
+
+/* Media Query for Mobile Devices (max-width: 600px is a common breakpoint) */
+@media screen and (max-width: 600px) {
+  /* 1. Change the main container to allow full width and block stacking */
+  .topnav {
+    /* Override desktop inline-flex behavior */
+    display: block;
+    /* Remove the box styling that was meant for the inline container */
+    border: none !important;
+    border-radius: 0 !important;
+    padding: 0 !important;
+    /* Ensure it takes up the full width */
+    width: 100%;
+  }
+
+  /* 2. Make the links full width and centered */
+  .topnav a {
+    /* Use block display to force each link onto its own line */
+    display: block;
+    text-align: center; /* Center the text within the link box */
+    /* Add a visible separator between stacked links (optional, but looks cleaner) */
+    border-bottom: 1px solid #ddd;
+  }
+
+  /* 3. Ensure the wrapper allows the topnav to expand to 100% */
+  .nav-wrapper {
+    text-align: left; /* Remove the centering needed for the tiny box */
+    width: 100%;
+  }
+}
