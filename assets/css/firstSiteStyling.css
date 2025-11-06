@@ -148,7 +148,7 @@ h1 {
 .h1-link {
   /* Inherit the size from H1 but remove default link styles */
   text-decoration: none; /* Removes the underline */
-  color: #efb8a8; /* Sets the default color (e.g., pink or peach) */
+  color: #319177; /* Sets the default color (e.g., pink or peach) */
   cursor: pointer; /* Ensures the mouse cursor shows it's clickable */
   font-weight: bold;
   /* Optional: Smooth transition for color change */
