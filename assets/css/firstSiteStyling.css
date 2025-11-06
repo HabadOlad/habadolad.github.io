@@ -144,32 +144,105 @@ h1 {
   display: block !important; /* Forces visibility on click, overriding the hover/default */
 }
 
-/* Media Query for Mobile Devices (max-width: 600px is a common breakpoint) */
+/* Base Style for the Link */
+.h1-link {
+  /* Inherit the size from H1 but remove default link styles */
+  text-decoration: none; /* Removes the underline */
+  color: #efb8a8; /* Sets the default color (e.g., pink or peach) */
+  cursor: pointer; /* Ensures the mouse cursor shows it's clickable */
+  font-weight: bold;
+  /* Optional: Smooth transition for color change */
+  transition: color 0.2s ease-in-out;
+}
+
+/* Color Change on HOVER */
+.h1-link:hover {
+  color: orange; /* Color changes to orange when the mouse is over it */
+}
+
+/* Color Change when CLICKED (i.e., when the button is actively pressed down) */
+.h1-link:active {
+  color: red; /* Color changes to red while the link is being pressed */
+}
+
+.h2-link {
+  /* Inherit the size from H1 but remove default link styles */
+  text-decoration: none; /* Removes the underline */
+  color: #dba8ef; /* Sets the default color */
+  cursor: pointer; /* Ensures the mouse cursor shows it's clickable */
+  font-weight: bold;
+  /* Optional: Smooth transition for color change */
+  transition: color 0.2s ease-in-out;
+}
+
+/* Color Change on HOVER */
+.h2-link:hover {
+  color: #e0efa8; /* Color changes to orange when the mouse is over it */
+}
+
+/* Color Change when CLICKED (i.e., when the button is actively pressed down) */
+.h2-link:active {
+  color: red; /* Color changes to red while the link is being pressed */
+}
+
+/* Keep all your existing Desktop/Default CSS here */
+
+/* --- Start Mobile-Specific Hamburger CSS --- */
+
 @media screen and (max-width: 600px) {
-  /* 1. Change the main container to allow full width and block stacking */
+  /* 1. Reset Top Nav Container */
   .topnav {
-    /* Override desktop inline-flex behavior */
-    display: block;
-    /* Remove the box styling that was meant for the inline container */
+    /* *** CRUCIAL FIX: Force the container to be a full-width block element *** */
+    display: block !important;
+    /* Remove the box styling */
     border: none !important;
     border-radius: 0 !important;
     padding: 0 !important;
-    /* Ensure it takes up the full width */
+    /* Ensure the container is ready for absolute positioning of icon */
+    position: relative;
     width: 100%;
+    /* Add a background color so the menu is visible when expanded */
+    background-color: #f1f1f1;
   }
 
-  /* 2. Make the links full width and centered */
-  .topnav a {
-    /* Use block display to force each link onto its own line */
+  /* 2. Hide all regular links by default on mobile */
+  .topnav a:not(:first-child) {
+    display: none;
+  }
+
+  /* 3. Style and position the Hamburger Icon */
+  .topnav a.icon {
+    /* Show the icon */
+    display: block !important;
+    /* Position icon in the top right corner */
+    position: absolute;
+    right: 0;
+    top: 0;
+    font-size: 24px;
+    padding: 14px 16px; /* Match the padding of your desktop links */
+  }
+
+  /* 4. **THE RESPONSIVE STATE**: When the menu is open */
+  .topnav.responsive {
+    /* The display: block is already set above, but doesn't hurt to keep it here */
     display: block;
-    text-align: center; /* Center the text within the link box */
-    /* Add a visible separator between stacked links (optional, but looks cleaner) */
-    border-bottom: 1px solid #ddd;
   }
 
-  /* 3. Ensure the wrapper allows the topnav to expand to 100% */
-  .nav-wrapper {
-    text-align: left; /* Remove the centering needed for the tiny box */
-    width: 100%;
+  /* When the menu is open, show and stack all the links */
+  .topnav.responsive a {
+    float: none;
+    display: block;
+    text-align: left; /* Stacked links usually look better left-aligned */
+    border-bottom: 1px solid #ddd;
+    /* Ensure the icon link has no border-bottom */
+    border-right: none !important;
+  }
+
+  /* 5. Ensure the icon stays in the top-right corner when the menu is open */
+  .topnav.responsive a.icon {
+    position: absolute;
+    right: 0;
+    top: 0;
+    border-bottom: none; /* Icon shouldn't have the separator */
   }
 }
