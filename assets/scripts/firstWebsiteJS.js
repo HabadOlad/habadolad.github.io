@@ -81,7 +81,7 @@ function updateClock() {
 
   // Display GMT
   document.getElementById("clock").innerHTML =
-    "LONDON, UK " +
+    "I'm in London, UK. It's currently " +
     timeString +
     amPM +
     "<br>" +
