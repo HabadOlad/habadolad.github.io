@@ -25,74 +25,32 @@ body {
   color: black;
 }
 
-.accordion {
-  background-color: #efdba8;
-  color: black;
-  cursor: pointer;
-  padding: 5px 18px;
-  width: 100%;
-  text-align: left;
-  border: none;
-  outline: none;
-  transition: 0.4s;
-  font-size: 70px;
-  font-family: "Adesso";
+h1 {
+  font-size: 50px;
 }
 
-/* Add a background color to the button if it is clicked on (add the .active class with JS), and when you move the mouse over it (hover) */
-.active,
-.accordion:hover {
-  background-color: transparent;
-  color: #00ff00;
-}
-
-/* Style the accordion panel. Note: hidden by default */
-.panel {
-  /* 1. Sets minimal vertical padding (0px top/bottom) */
-  padding: 5px 18px;
-  background-color: white;
-  display: none;
-  overflow: hidden;
-  /* (Note: display: flex will be on the inner wrapper, not the panel itself) */
-}
-
-/* Rule for the text inside the panel */
-.panel p {
-  /* 2. Removes default top/bottom margin from paragraph element */
-  margin: 0;
-  /* 3. Tightens the spacing between lines of text */
-  line-height: 2;
-}
-
-/* Style the figure element */
-.panel-content-wrapper .image-with-caption {
-  /* Remove default figure margin and set max width */
-  margin: 0;
-  max-width: 30%; /* Sets the size for the image/caption block */
-  flex-shrink: 0;
-}
-
-.panel-content-wrapper img {
-  /* Ensure image fills the figure width */
-  max-width: 100%;
-  height: auto;
-  display: block; /* Removes any default space below the image */
-}
-
-.panel-content-wrapper figcaption {
-  /* Adjust caption styling if needed */
-  font-size: small;
-  text-align: center;
-}
-
-/* Existing Flexbox Rule */
-.panel-content-wrapper {
+.topnav {
+  /* Centers the content (the links) horizontally */
   display: flex;
-  gap: 20px;
-  align-items: flex-start;
+  justify-content: center;
+  /* Makes sure the links stay in a row */
+  align-items: center;
+
+  font-size: 30px;
+
+  /* Remove any default margin/padding from the container */
+  margin: 0;
+  padding: 0;
+  overflow: hidden; /* Recommended for nav bars */
 }
-/* ... (rest of your existing CSS) ... */
-/* Style the Text Container */
-.text-content {
-  flex-grow: 1; /* Allows the text to take up the remaining space */
+
+.topnav a {
+  /* Removes the default underline from the links */
+  text-decoration: none;
+  /* Sets the text color to black (you can choose any color) */
+  color: black;
+  /* Adds some padding to make the links look more like buttons */
+  padding: 14px 16px;
+  /* Removes the blue background from the active link */
+  background-color: transparent;
 }
