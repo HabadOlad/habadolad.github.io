@@ -185,6 +185,26 @@ h1 {
   color: red; /* Color changes to red while the link is being pressed */
 }
 
+.h3-link {
+  /* Inherit the size from H1 but remove default link styles */
+  text-decoration: none; /* Removes the underline */
+  color: #00ff00; /* Sets the default color (e.g., pink or peach) */
+  cursor: pointer; /* Ensures the mouse cursor shows it's clickable */
+  font-weight: bold;
+  /* Optional: Smooth transition for color change */
+  transition: color 0.2s ease-in-out;
+}
+
+/* Color Change on HOVER */
+.h3-link:hover {
+  color: #afe8be; /* Color changes to orange when the mouse is over it */
+}
+
+/* Color Change when CLICKED (i.e., when the button is actively pressed down) */
+.h3-link:active {
+  color: #ff0038; /* Color changes to red while the link is being pressed */
+}
+
 /* Keep all your existing Desktop/Default CSS here */
 
 /* --- Start Mobile-Specific Hamburger CSS --- */
