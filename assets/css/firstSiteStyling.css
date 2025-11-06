@@ -192,57 +192,60 @@ h1 {
 @media screen and (max-width: 600px) {
   /* 1. Reset Top Nav Container */
   .topnav {
-    /* *** CRUCIAL FIX: Force the container to be a full-width block element *** */
+    /* Ensure no float property is interfering */
+    float: none !important;
+    /* CRUCIAL: Force block display for full width and correct positioning */
     display: block !important;
-    /* Remove the box styling */
     border: none !important;
     border-radius: 0 !important;
     padding: 0 !important;
-    /* Ensure the container is ready for absolute positioning of icon */
     position: relative;
     width: 100%;
-    /* Add a background color so the menu is visible when expanded */
+    /* Add a background for visibility when the menu is open */
     background-color: #f1f1f1;
   }
 
-  /* 2. Hide all regular links by default on mobile */
-  .topnav a:not(:first-child) {
-    display: none;
-  }
-
-  /* 3. Style and position the Hamburger Icon */
+  /* 2. Style and position the Hamburger Icon - HIGHLY specific rule */
+  /* This ensures the icon appears and is not affected by other link styles */
   .topnav a.icon {
-    /* Show the icon */
     display: block !important;
-    /* Position icon in the top right corner */
     position: absolute;
     right: 0;
     top: 0;
     font-size: 24px;
-    padding: 14px 16px; /* Match the padding of your desktop links */
+    padding: 14px 16px;
+    /* Ensure it's not accidentally hidden by the hide-other-links rule */
+    float: none !important;
   }
 
-  /* 4. **THE RESPONSIVE STATE**: When the menu is open */
+  /* 3. Hide all OTHER links by default on mobile */
+  /* This rule must *not* target the icon link */
+  .topnav a:not(.icon) {
+    display: none;
+  }
+
+  /* 4. **RESPONSIVE STATE** (Menu is open) */
   .topnav.responsive {
-    /* The display: block is already set above, but doesn't hurt to keep it here */
     display: block;
+    width: 100%;
   }
 
-  /* When the menu is open, show and stack all the links */
+  /* When the menu is open, show and stack ALL links, except the icon is handled separately below */
   .topnav.responsive a {
     float: none;
     display: block;
-    text-align: left; /* Stacked links usually look better left-aligned */
+    text-align: left;
     border-bottom: 1px solid #ddd;
-    /* Ensure the icon link has no border-bottom */
     border-right: none !important;
   }
 
-  /* 5. Ensure the icon stays in the top-right corner when the menu is open */
+  /* When open, ensure the icon stays in the top-right corner */
   .topnav.responsive a.icon {
     position: absolute;
     right: 0;
     top: 0;
-    border-bottom: none; /* Icon shouldn't have the separator */
+    /* Must override the display: block from the previous rule to keep it inline with its position */
+    display: block !important;
+    border-bottom: none;
   }
 }
