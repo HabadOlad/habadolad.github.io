@@ -37,6 +37,10 @@ h1 {
   align-items: center;
 
   font-size: 30px;
+  border: 2px solid black;
+  border-radius: 10px;
+  display: inline-flex;
+  margin: 20px auto;
 
   /* Remove any default margin/padding from the container */
   margin: 0;
@@ -45,12 +49,63 @@ h1 {
 }
 
 .topnav a {
-  /* Removes the default underline from the links */
   text-decoration: none;
-  /* Sets the text color to black (you can choose any color) */
-  color: black;
-  /* Adds some padding to make the links look more like buttons */
-  padding: 14px 16px;
-  /* Removes the blue background from the active link */
+  color: black; /* Default text color */
+  padding: 10px 15px;
+  display: block;
   background-color: transparent;
+  /* Smooth transition for the colorful hover effect */
+  transition: background-color 0.3s, color 0.3s;
+  border-radius: 6px;
+}
+
+.nav-wrapper {
+  /* Ensures the container spans the full width of the parent (e.g., the body) */
+  width: 100%;
+  /* Centers the inline-flex content (the .topnav box) horizontally */
+  text-align: center;
+}
+
+/* HOME - light purple */
+.link-home:hover {
+  background-color: #dba8ef; /* light purple */
+  color: white;
+}
+
+/* PORTFOLIO - light blue */
+.link-portfolio:hover {
+  background-color: #a8e0ef; /* lightblue */
+  color: white;
+}
+
+/* PROJECTS - Turquoise */
+.link-projects:hover {
+  background-color: #a8bcef; /* Turquoise */
+  color: white;
+}
+
+/* BLOG - Sunny Yellow */
+.link-blog:hover {
+  background-color: #ffc93c; /* Golden Yellow */
+  color: white;
+}
+
+/* CV - light pink */
+.link-cv:hover {
+  background-color: #efa8bc; /* Deep Magenta/Purple */
+  color: white;
+}
+
+/* CONTACT - Soft Pink */
+.link-contact:hover {
+  background-color: #e0efa8; /* Muted Rose Pink */
+  color: white;
+}
+
+/* 5. Active Link Style */
+/* You may want the active link to use one of the colors permanently for emphasis */
+.topnav a.active {
+  background-color: #383e56; /* Uses the HOME hover color */
+  color: white;
+  font-weight: bold;
 }
