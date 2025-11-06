@@ -109,3 +109,37 @@ h1 {
   color: white;
   font-weight: bold;
 }
+
+.tooltip-trigger {
+  position: relative;
+  color: #efa8bc;
+  cursor: pointer; /* Use pointer for the click action */
+}
+
+/* 2. Style and hide the photo by default */
+.tooltip-photo {
+  /* Hides the image by default (will be overridden by :hover or .show-photo) */
+  display: none;
+
+  /* Positioning and Box Styling */
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 200px;
+  height: auto;
+  border: 3px solid black;
+  border-radius: 8px;
+  z-index: 10;
+  transition: opacity 0.3s; /* Smooth transition for click/hover */
+}
+
+/* 3. **CSS HOVER ACTION** (Photo appears when hovered) */
+.tooltip-trigger:hover .tooltip-photo {
+  display: block; /* Overrides the 'display: none' above */
+}
+
+/* 4. **JAVASCRIPT CLICK ACTION** (Photo stays visible when this class is active) */
+.tooltip-trigger.show-photo .tooltip-photo {
+  display: block !important; /* Forces visibility on click, overriding the hover/default */
+}

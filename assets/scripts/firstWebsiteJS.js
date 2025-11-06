@@ -1,6 +1,37 @@
 const footer = document.getElementById("footer");
 footer.innerHTML = `<footer> &copy; ${new Date().getFullYear()} Habad Olad. All rights reserved.</footer>`;
 
+document.addEventListener("DOMContentLoaded", function () {
+  const trigger = document.getElementById("click-word");
+
+  trigger.addEventListener("click", function (e) {
+    // 1. Stop the event from bubbling up (optional)
+    e.stopPropagation();
+
+    // 2. Toggle the 'show-photo' class
+    // This class uses the CSS rule above to make the image visible until clicked again.
+    trigger.classList.toggle("show-photo");
+
+    // Optional: Add a smooth visual effect on click
+    if (trigger.classList.contains("show-photo")) {
+      trigger.style.backgroundColor = "lightblue";
+    } else {
+      trigger.style.backgroundColor = "transparent";
+    }
+  });
+
+  // 3. OPTIONAL: Hide the photo if the user clicks anywhere else on the page
+  document.addEventListener("click", function (e) {
+    if (
+      trigger.classList.contains("show-photo") &&
+      !trigger.contains(e.target)
+    ) {
+      trigger.classList.remove("show-photo");
+      trigger.style.backgroundColor = "transparent"; // Reset background
+    }
+  });
+});
+
 function updateClock() {
   var now = new Date();
   var hours = now.getHours();
