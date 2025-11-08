@@ -4,6 +4,7 @@
   font-style: normal;
   src: url("fonts/font (1)/Adesso-Bold.woff2") format("woff2"),
     url("fonts/font (1)/Adesso-Bold.woff") format("woff");
+  font-display: swap;
 }
 
 html {
