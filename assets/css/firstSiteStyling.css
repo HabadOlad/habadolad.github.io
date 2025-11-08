@@ -102,14 +102,6 @@ h1 {
   color: white;
 }
 
-/* 5. Active Link Style */
-/* You may want the active link to use one of the colors permanently for emphasis */
-.topnav a.active {
-  background-color: #383e56; /* Uses the HOME hover color */
-  color: white;
-  font-weight: bold;
-}
-
 .tooltip-trigger {
   position: relative;
   color: #efa8bc;
