@@ -99,37 +99,37 @@ h1 {
 
 /* HOME - light purple */
 .link-home:hover {
-  background-color: #dba8ef; /* light purple */
+  background-color: #efdba8; /* peachish */
   color: white;
 }
 
 /* PORTFOLIO - light blue */
 .link-portfolio:hover {
-  background-color: #a8e0ef; /* lightblue */
+  background-color: #2596be; /* darkish blue */
   color: white;
 }
 
 /* PROJECTS - Turquoise */
 .link-projects:hover {
-  background-color: #a8bcef; /* Turquoise */
+  background-color: #fdba9d; /* peach orange */
   color: white;
 }
 
 /* BLOG - Sunny Yellow */
 .link-blog:hover {
-  background-color: #ffc93c; /* Golden Yellow */
+  background-color: #e04b29; /* strong red */
   color: white;
 }
 
 /* CV - light pink */
 .link-cv:hover {
-  background-color: #efa8bc; /* Deep Magenta/Purple */
+  background-color: #febb0b; /* gold */
   color: white;
 }
 
 /* CONTACT - Soft Pink */
 .link-contact:hover {
-  background-color: #e0efa8; /* Muted Rose Pink */
+  background-color: #cf8641; /* funky brown */
   color: white;
 }
 
