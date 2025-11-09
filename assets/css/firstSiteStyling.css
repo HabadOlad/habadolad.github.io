@@ -38,12 +38,12 @@ body {
 
 /* --- Projects Page Styles --- */
 .projects-page {
-  background-color: #fdba9d; /* peach pink */
+  background-color: #e04b29; /* peach pink */
 }
 
 /* --- Blog Page Styles --- */
 .blog-page {
-  background-color: #e04b29; /* strong red*/
+  background-color: #fdba9d; /* strong red*/
 }
 
 /* --- CV Page Styles --- */
@@ -97,37 +97,37 @@ h1 {
   text-align: center;
 }
 
-/* HOME - light purple */
+/* HOME -  */
 .link-home:hover {
   background-color: #efdba8; /* peachish */
   color: white;
 }
 
-/* PORTFOLIO - light blue */
+/* PORTFOLIO -  */
 .link-portfolio:hover {
   background-color: #2596be; /* darkish blue */
   color: white;
 }
 
-/* PROJECTS - Turquoise */
+/* PROJECTS */
 .link-projects:hover {
-  background-color: #fdba9d; /* peach orange */
-  color: white;
-}
-
-/* BLOG - Sunny Yellow */
-.link-blog:hover {
   background-color: #e04b29; /* strong red */
   color: white;
 }
 
-/* CV - light pink */
+/* BLOG  */
+.link-blog:hover {
+  background-color: #fdba9d; /* peach */
+  color: white;
+}
+
+/* CV  */
 .link-cv:hover {
   background-color: #febb0b; /* gold */
   color: white;
 }
 
-/* CONTACT - Soft Pink */
+/* CONTACT  */
 .link-contact:hover {
   background-color: #cf8641; /* funky brown */
   color: white;
