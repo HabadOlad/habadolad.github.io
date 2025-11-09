@@ -62,7 +62,7 @@ h1 {
 
 .topnav {
   /* Centers the content (the links) horizontally */
-  display: flex;
+
   justify-content: center;
   /* Makes sure the links stay in a row */
   align-items: center;
@@ -70,13 +70,14 @@ h1 {
   font-size: 30px;
   border: 2px solid black;
   border-radius: 10px;
-  display: inline-flex;
+
   margin: 20px auto;
 
   /* Remove any default margin/padding from the container */
   margin: 0;
   padding: 0;
   overflow: hidden; /* Recommended for nav bars */
+  display: inline-block;
 }
 
 .topnav a {
@@ -88,6 +89,7 @@ h1 {
   /* Smooth transition for the colorful hover effect */
   transition: background-color 0.3s, color 0.3s;
   border-radius: 6px;
+  float: left;
 }
 
 .nav-wrapper {
@@ -232,63 +234,43 @@ h1 {
 
 /* --- Start Mobile-Specific Hamburger CSS --- */
 
+.topnav .icon {
+  display: none;
+}
+
 @media screen and (max-width: 600px) {
-  /* 1. Reset Top Nav Container */
+  /* Container switches to full-width block to hold stacked links */
   .topnav {
-    /* Ensure no float property is interfering */
-    float: none !important;
-    /* CRUCIAL: Force block display for full width and correct positioning */
-    display: block !important;
-    border: none !important;
-    border-radius: 0 !important;
-    padding: 0 !important;
-    position: relative;
     width: 100%;
-    /* Add a background for visibility when the menu is open */
+    display: block;
+    border: none;
+    border-radius: 0;
     background-color: #f1f1f1;
   }
 
-  /* 2. Style and position the Hamburger Icon - HIGHLY specific rule */
-  /* This ensures the icon appears and is not affected by other link styles */
-  .topnav a.icon {
-    display: block !important;
-    position: absolute;
-    right: 0;
-    top: 0;
-    font-size: 24px;
-    padding: 14px 16px;
-    /* Ensure it's not accidentally hidden by the hide-other-links rule */
-    float: none !important;
-  }
-
-  /* 3. Hide all OTHER links by default on mobile */
-  /* This rule must *not* target the icon link */
+  /* Hide all links except the icon link */
   .topnav a:not(.icon) {
     display: none;
-  }
-
-  /* 4. **RESPONSIVE STATE** (Menu is open) */
-  .topnav.responsive {
-    display: block;
-    width: 100%;
-  }
-
-  /* When the menu is open, show and stack ALL links, except the icon is handled separately below */
-  .topnav.responsive a {
     float: none;
-    display: block;
+  }
+
+  /* Show and position the hamburger icon in the top right */
+  .topnav a.icon {
+    float: right;
+    display: block; /* Overrides the desktop 'display: none' */
+  }
+
+  /* **RESPONSIVE STATE** (When myFunction() adds the class) */
+  .topnav.responsive a {
+    float: none; /* Stacks the links */
+    display: block; /* Makes them full width */
     text-align: left;
     border-bottom: 1px solid #ddd;
-    border-right: none !important;
   }
 
-  /* When open, ensure the icon stays in the top-right corner */
+  /* Ensure the icon keeps its right-float position when menu is open */
   .topnav.responsive a.icon {
-    position: absolute;
-    right: 0;
-    top: 0;
-    /* Must override the display: block from the previous rule to keep it inline with its position */
-    display: block !important;
+    float: right;
     border-bottom: none;
   }
 }
