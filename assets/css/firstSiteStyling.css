@@ -26,6 +26,36 @@ body {
   color: black;
 }
 
+/* --- Home Page Styles --- */
+.home-page {
+  background-color: #efdba8; /* peachish */
+}
+
+/* --- Portfolio Page Styles --- */
+.portfolio-page {
+  background-color: #2596be; /* blue */
+}
+
+/* --- Projects Page Styles --- */
+.projects-page {
+  background-color: #fdba9d; /* peach pink */
+}
+
+/* --- Blog Page Styles --- */
+.blog-page {
+  background-color: #e04b29; /* strong red*/
+}
+
+/* --- CV Page Styles --- */
+.cv-page {
+  background-color: #febb0b; /* gold yellow */
+}
+
+/* --- Contact Page Styles --- */
+.contact-page {
+  background-color: #cf8641; /* dark orange */
+}
+
 h1 {
   font-size: 50px;
 }
