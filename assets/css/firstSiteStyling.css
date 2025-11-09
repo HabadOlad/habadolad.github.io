@@ -193,7 +193,7 @@ h1 {
 .h2-link {
   /* Inherit the size from H1 but remove default link styles */
   text-decoration: none; /* Removes the underline */
-  color: #dba8ef; /* Sets the default color */
+  color: #cf8641; /* Sets the default color */
   cursor: pointer; /* Ensures the mouse cursor shows it's clickable */
   font-weight: bold;
   /* Optional: Smooth transition for color change */
