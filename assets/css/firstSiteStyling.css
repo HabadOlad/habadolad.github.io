@@ -1,9 +1,20 @@
+/* 1. BOLD VARIANT */
 @font-face {
-  font-family: "Adesso"; /* Use the core family name */
-  font-weight: 700; /* Map this file to the 'bold' weight */
+  font-family: "Adesso"; /* Use ONE consistent family name */
+  font-weight: 700; /* Maps to the bold file */
   font-style: normal;
   src: url("fonts/font (1)/Adesso-Bold.woff2") format("woff2"),
     url("fonts/font (1)/Adesso-Bold.woff") format("woff");
+  font-display: swap;
+}
+
+/* 2. THIN/REGULAR VARIANT */
+@font-face {
+  font-family: "Adesso"; /* Use the SAME family name */
+  font-weight: 300; /* Maps to the regular file (to use for a thin look) */
+  font-style: normal;
+  src: url("fonts/font (1)/AdessoW00-Regular.woff2") format("woff2"),
+    url("fonts/font (1)/AdessoW00-Regular.woff") format("woff");
   font-display: swap;
 }
 
@@ -68,6 +79,7 @@ h1 {
   align-items: center;
 
   font-size: 30px;
+  font-weight: 300;
   border: 2px solid black;
   border-radius: 10px;
 
@@ -86,6 +98,7 @@ h1 {
   padding: 10px 15px;
   display: block;
   background-color: transparent;
+  font-weight: 200;
   /* Smooth transition for the colorful hover effect */
   transition: background-color 0.3s, color 0.3s;
   border-radius: 6px;
