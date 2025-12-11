@@ -322,3 +322,19 @@ input[type="submit"]:hover {
   background-color: #cf8641;
   padding: 20px;
 }
+
+.project-card img {
+  /* 1. Sets the maximum width of the image to the width of its parent container. */
+  /* This ensures it never spills outside the card, even if the image is huge. */
+  max-width: 100%;
+
+  /* 2. Automatically adjusts the height to maintain the image's aspect ratio. */
+  /* This prevents the image from looking stretched or squashed. */
+  height: auto;
+
+  /* Optional: Sets a reasonable default size for larger screens (laptops/desktops) */
+  width: 300px; /* Adjust this fixed width as needed for your laptop view */
+
+  /* Optional: Makes the image a perfect square/circle if desired */
+  /* aspect-ratio: 1 / 1; */
+}
