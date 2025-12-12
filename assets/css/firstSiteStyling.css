@@ -69,6 +69,10 @@ body {
 
 h1 {
   font-size: 50px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
 }
 
 .topnav {
@@ -345,7 +349,7 @@ input[type="submit"]:hover {
   max-width: 300px; /* Example width - use your desired size */
   width: 100%;
   /* Optional: Add padding to keep content slightly away from the card's edge */
-  padding: 10px; 
+  padding: 10px;
 }
 
 .project-card img {
@@ -369,16 +373,16 @@ input[type="submit"]:hover {
 .subheaders {
   font-weight: 300;
   border: none; /* Keep the border off the main container */
-  border-radius: 0; 
+  border-radius: 0;
   /* Resetting margin to 0 for a cleaner start inside the card */
-  margin: 0; 
+  margin: 0;
   /* Use flexbox to enable wrapping */
   display: flex;
-  flex-wrap: wrap; 
+  flex-wrap: wrap;
   /* Add a little padding to the subheaders to space tags from its edge */
   padding: 5px 0;
   /* Setting width to 100% ensures it uses the full width of project-card */
-  width: 100%; 
+  width: 100%;
   /* Important: Ensures the subheaders container does not exceed its parent */
   box-sizing: border-box;
 }
@@ -387,13 +391,13 @@ input[type="submit"]:hover {
 .subheaders span {
   border: 2px solid black;
   border-radius: 10px;
-  
+
   /* Internal spacing */
-  padding: 5px 10px; 
-  
+  padding: 5px 10px;
+
   /* External spacing between boxes */
-  margin: 5px; 
-  
+  margin: 5px;
+
   /* Treat the span as a proper block for margin/padding */
-  display: inline-block; 
+  display: inline-block;
 }
