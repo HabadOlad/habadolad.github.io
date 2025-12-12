@@ -177,8 +177,6 @@ h1:not(.intropage) {
   transform: translateX(-50%);
   width: 200px;
   height: auto;
-  border: 3px solid black;
-  border-radius: 8px;
   z-index: 10;
   transition: opacity 0.3s; /* Smooth transition for click/hover */
 }
