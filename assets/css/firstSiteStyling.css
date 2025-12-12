@@ -67,12 +67,19 @@ body {
   background-color: #cf8641; /* dark orange */
 }
 
-h1 {
+h1:not(.intropage) {
   font-size: 50px;
   display: flex;
   flex-direction: column;
   justify-content: center;
   text-align: center;
+}
+
+/* Styles for .intropage will now only apply to .intropage, 
+   and won't be overridden by the h1 styles */
+.intropage {
+  font-size: 50px; /* You will still need to define the font-size here */
+  /* Add any other specific styles for .intropage here */
 }
 
 .topnav {
