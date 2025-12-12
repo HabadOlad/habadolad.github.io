@@ -339,6 +339,15 @@ input[type="submit"]:hover {
   margin: 0 auto; /* Center the container */
 }
 
+.project-card {
+  /* Set a defined max-width if you haven't already. 
+     This is crucial for containment. */
+  max-width: 300px; /* Example width - use your desired size */
+  width: 100%;
+  /* Optional: Add padding to keep content slightly away from the card's edge */
+  padding: 10px; 
+}
+
 .project-card img {
   /* 1. Sets the maximum width of the image to the width of its parent container. */
   /* This ensures it never spills outside the card, even if the image is huge. */
@@ -353,4 +362,38 @@ input[type="submit"]:hover {
 
   /* Optional: Makes the image a perfect square/circle if desired */
   /* aspect-ratio: 1 / 1; */
+}
+/* 1. Remove the outline/border from the parent
+     and allow its children to wrap.
+*/
+.subheaders {
+  font-weight: 300;
+  border: none; /* Keep the border off the main container */
+  border-radius: 0; 
+  /* Resetting margin to 0 for a cleaner start inside the card */
+  margin: 0; 
+  /* Use flexbox to enable wrapping */
+  display: flex;
+  flex-wrap: wrap; 
+  /* Add a little padding to the subheaders to space tags from its edge */
+  padding: 5px 0;
+  /* Setting width to 100% ensures it uses the full width of project-card */
+  width: 100%; 
+  /* Important: Ensures the subheaders container does not exceed its parent */
+  box-sizing: border-box;
+}
+
+/* 3. Style the individual <span> tags */
+.subheaders span {
+  border: 2px solid black;
+  border-radius: 10px;
+  
+  /* Internal spacing */
+  padding: 5px 10px; 
+  
+  /* External spacing between boxes */
+  margin: 5px; 
+  
+  /* Treat the span as a proper block for margin/padding */
+  display: inline-block; 
 }
