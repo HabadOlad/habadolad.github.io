@@ -431,3 +431,30 @@ input[type="submit"]:hover {
   /* Treat the span as a proper block for margin/padding */
   display: inline-block;
 }
+
+.floated-profile-img {
+  float: left; /* This moves the image to the left, allowing text to wrap around it */
+  width: 200px; /* Set a specific, small width */
+  height: auto;
+  margin-right: 25px; /* Adds space between the image and the text */
+  margin-bottom: 15px; /* Adds space below the image */
+
+  /* Optional: Aesthetic styling */
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* IMPORTANT: Clear the float below the text/image section */
+.cv-heading {
+  /* Add the specific styles you want here, e.g.: */
+  font-size: 2.2em;
+  margin-top: 30px;
+  margin-bottom: 20px;
+  clear: left; /* Keep this if you used the `float` method earlier */
+}
+
+/* Optional: You can style the paragraph text if needed */
+.about-me-text {
+  /* Ensure paragraph has some top padding if needed to align with image */
+  padding-top: 5px;
+}
