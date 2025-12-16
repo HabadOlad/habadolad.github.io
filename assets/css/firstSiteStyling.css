@@ -435,7 +435,7 @@ input[type="submit"]:hover {
 .floated-profile-img {
   float: left; /* This moves the image to the left, allowing text to wrap around it */
   width: 200px; /* Set a specific, small width */
-  height: auto;
+  height: 200px;
   margin-right: 25px; /* Adds space between the image and the text */
   margin-bottom: 15px; /* Adds space below the image */
 
@@ -447,6 +447,7 @@ input[type="submit"]:hover {
 /* IMPORTANT: Clear the float below the text/image section */
 .cv-heading {
   /* Add the specific styles you want here, e.g.: */
+
   font-size: 2.2em;
   margin-top: 30px;
   margin-bottom: 20px;
