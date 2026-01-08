@@ -1,0 +1,72 @@
+@font-face {
+  font-family: "Apercu Mono Pro";
+  /*
+      Ensure this path is correct relative to the CSS file
+      and that the file is actually a .woff format (or change format() to "woff")
+      If you have the .woff2 file, use that instead for better compression.
+    */
+  src: url("assets/css/fonts/font (1)/ApercuMonoPro-Medium.woff") format("woff");
+  src: url("assets/css/fonts/font (1)/ApercuMonoPro-Medium.woff")
+    format("woff2");
+}
+
+* {
+  font-family: "Apercu Mono Pro", monospace;
+  font: "Apercu Mono Pro";
+}
+
+#quoteDisplay {
+  /* Set left and right margins to 'auto' to horizontally center it */
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+  font-size: 30px;
+}
+
+.button {
+  font-size: 16px;
+  font-weight: 200;
+  letter-spacing: 1px;
+  padding: 13px 20px 13px;
+  outline: 0;
+  border: 1px solid black;
+  cursor: pointer;
+  position: relative;
+  background-color: rgba(0, 0, 0, 0);
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+}
+
+.button:after {
+  content: "";
+  background-color: #00ff00;
+  width: 100%;
+  z-index: -1;
+  position: absolute;
+  height: 100%;
+  top: 7px;
+  left: 7px;
+  transition: 0.2s;
+}
+
+.button:hover:after {
+  top: 0px;
+  left: 0px;
+  color: #00ff00;
+}
+
+@media (min-width: 768px) {
+  .button {
+    padding: 13px 50px 13px;
+  }
+}
+
+.Button-container {
+  /* Set a defined width for the div (must be less than 100%) */
+  width: 250px;
+
+  /* Set left and right margins to 'auto' to horizontally center it */
+  margin-left: auto;
+  margin-right: auto;
+}

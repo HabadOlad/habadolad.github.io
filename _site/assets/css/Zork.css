@@ -1,0 +1,94 @@
+/* --- Global Styles --- */
+@import url("https://fonts.googleapis.com/css2?family=VT323&display=swap");
+
+body,
+html {
+  background-image: repeating-linear-gradient(
+    transparent 0,
+    rgba(0, 0, 0, 0.8) 1px,
+    transparent 2px
+  );
+  height: 100%;
+  margin: 0;
+  /* Dark blue/purple background for a retro theme */
+  background-color: black;
+  font-family: "VT323", monospace;
+  color: #ccffcc; /* Light green/cyan text color */
+  font-size: 25px;
+}
+
+/* --- Flickering Keyframes --- */
+/* This animation provides the subtle, unsteady text effect */
+@keyframes flicker {
+  /* Most of the time, the text is fully visible with a strong glow */
+  0%,
+  19%,
+  21%,
+  23%,
+  25%,
+  54%,
+  56%,
+  100% {
+    text-shadow: 0 0 2px #ccffcc, /* Bright white core */ 0 0 10px #00ff00; /* Green glow */
+    opacity: 1;
+  }
+  /* Occasionally, briefly reduce the glow and opacity for the flicker effect */
+  20%,
+  24%,
+  55% {
+    text-shadow: 0 0 1px #ccffcc;
+    opacity: 0.8;
+  }
+}
+
+/* --- Terminal Output Area --- */
+#terminal {
+  padding: 20px;
+  height: 100%;
+  box-sizing: border-box;
+  overflow-y: auto;
+
+  /* 1. Apply the text glow immediately */
+  text-shadow: 0 0 2px #ccffcc, 0 0 10px #00ff00;
+
+  /* 2. Apply the flicker animation */
+  animation: flicker 2s infinite alternate;
+
+  /* 3. Optional: Subtle horizontal lines (scanlines) for authenticity */
+  background-image: repeating-linear-gradient(
+    transparent 0,
+    rgba(0, 0, 0, 0.4) 1px,
+    transparent 2px
+  );
+}
+
+/* --- Input Area --- */
+#input-line {
+  display: flex;
+  align-items: center;
+}
+
+.prompt {
+  margin-right: 5px;
+  /* Make the prompt slightly brighter/more stable */
+  text-shadow: 0 0 5px #ffffff;
+}
+
+#input {
+  width: 100%;
+  border: none;
+  background: none;
+  outline: none;
+  color: inherit;
+  font-family: "VT323", monospace;
+  font-size: 25px;
+
+  /* --- FIX: ADDED FLICKER EFFECT TO INPUT --- */
+  text-shadow: 0 0 2px #ccffcc, 0 0 10px #00ff00;
+  animation: flicker 2s infinite alternate;
+  /* ------------------------------------- */
+}
+.field {
+  white-space: pre;
+  font-size: 25px;
+}

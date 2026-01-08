@@ -1,0 +1,461 @@
+/* 1. BOLD VARIANT */
+@font-face {
+  font-family: "Adesso"; /* Use ONE consistent family name */
+  font-weight: 700; /* Maps to the bold file */
+  font-style: normal;
+  src: url("fonts/font (1)/Adesso-Bold.woff2") format("woff2"),
+    url("fonts/font (1)/Adesso-Bold.woff") format("woff");
+  font-display: swap;
+}
+
+/* 2. THIN/REGULAR VARIANT */
+@font-face {
+  font-family: "Adesso"; /* Use the SAME family name */
+  font-weight: 300; /* Maps to the regular file (to use for a thin look) */
+  font-style: normal;
+  src: url("fonts/font (1)/AdessoW00-Regular.woff2") format("woff2"),
+    url("fonts/font (1)/AdessoW00-Regular.woff") format("woff");
+  font-display: swap;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+* {
+  font-family: "Adesso";
+}
+
+body {
+  background-color: #efdba8;
+  /* Use only font-family and include a generic fallback */
+  font-family: "Adesso";
+  /* Using a single padding value for consistency across the entire page */
+  padding: 7.5px;
+  margin: 0;
+  text-align: left; /* All text-based elements inherit left alignment */
+  color: black;
+}
+
+/* --- Home Page Styles --- */
+.home-page {
+  background-color: #efdba8; /* peachish */
+}
+
+/* --- Portfolio Page Styles --- */
+.portfolio-page {
+  background-color: #2596be; /* blue */
+}
+
+/* --- Projects Page Styles --- */
+.projects-page {
+  background-color: #e04b29; /* peach pink */
+}
+
+/* --- Blog Page Styles --- */
+.blog-page {
+  background-color: #fdba9d; /* strong red*/
+}
+
+/* --- CV Page Styles --- */
+.cv-page {
+  background-color: #febb0b; /* gold yellow */
+}
+
+/* --- Contact Page Styles --- */
+.contact-page {
+  background-color: #cf8641; /* dark orange */
+}
+
+h1:not(.intropage) {
+  font-size: 50px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+}
+
+/* Styles for .intropage will now only apply to .intropage, 
+   and won't be overridden by the h1 styles */
+.intropage {
+  font-size: 50px; /* You will still need to define the font-size here */
+  /* Add any other specific styles for .intropage here */
+}
+
+.topnav {
+  /* Centers the content (the links) horizontally */
+
+  justify-content: center;
+  /* Makes sure the links stay in a row */
+  align-items: center;
+
+  font-size: 30px;
+  font-weight: 300;
+  border: 2px solid black;
+  border-radius: 10px;
+
+  margin: 20px auto;
+
+  /* Remove any default margin/padding from the container */
+  margin: 0;
+  padding: 0;
+  overflow: hidden; /* Recommended for nav bars */
+  display: inline-block;
+}
+
+.topnav a {
+  text-decoration: none;
+  color: black; /* Default text color */
+  padding: 10px 15px;
+  display: block;
+  background-color: transparent;
+  font-weight: 200;
+  /* Smooth transition for the colorful hover effect */
+  transition: background-color 0.3s, color 0.3s;
+  border-radius: 6px;
+  float: left;
+}
+
+.nav-wrapper {
+  /* Ensures the container spans the full width of the parent (e.g., the body) */
+  width: 100%;
+  /* Centers the inline-flex content (the .topnav box) horizontally */
+  text-align: center;
+}
+
+/* HOME -  */
+.link-home:hover {
+  background-color: #efdba8; /* peachish */
+  color: white;
+}
+
+/* PORTFOLIO -  */
+.link-portfolio:hover {
+  background-color: #2596be; /* darkish blue */
+  color: white;
+}
+
+/* PROJECTS */
+.link-projects:hover {
+  background-color: #e04b29; /* strong red */
+  color: white;
+}
+
+/* BLOG  */
+.link-blog:hover {
+  background-color: #fdba9d; /* peach */
+  color: white;
+}
+
+/* CV  */
+.link-cv:hover {
+  background-color: #febb0b; /* gold */
+  color: white;
+}
+
+/* CONTACT  */
+.link-contact:hover {
+  background-color: #cf8641; /* funky brown */
+  color: white;
+}
+
+.tooltip-trigger {
+  position: relative;
+  color: #efa8bc;
+  cursor: pointer; /* Use pointer for the click action */
+}
+
+/* 2. Style and hide the photo by default */
+.tooltip-photo {
+  /* Hides the image by default (will be overridden by :hover or .show-photo) */
+  display: none;
+
+  /* Positioning and Box Styling */
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 200px;
+  height: auto;
+  z-index: 10;
+  transition: opacity 0.3s; /* Smooth transition for click/hover */
+}
+
+/* 3. **CSS HOVER ACTION** (Photo appears when hovered) */
+.tooltip-trigger:hover .tooltip-photo {
+  display: block; /* Overrides the 'display: none' above */
+}
+
+/* 4. **JAVASCRIPT CLICK ACTION** (Photo stays visible when this class is active) */
+.tooltip-trigger.show-photo .tooltip-photo {
+  display: block !important; /* Forces visibility on click, overriding the hover/default */
+}
+
+/* Base Style for the Link */
+.h1-link {
+  /* Inherit the size from H1 but remove default link styles */
+  text-decoration: none; /* Removes the underline */
+  color: #319177; /* Sets the default color (e.g., pink or peach) */
+  cursor: pointer; /* Ensures the mouse cursor shows it's clickable */
+  font-weight: bold;
+  /* Optional: Smooth transition for color change */
+  transition: color 0.2s ease-in-out;
+}
+
+/* Color Change on HOVER */
+.h1-link:hover {
+  color: orange; /* Color changes to orange when the mouse is over it */
+}
+
+/* Color Change when CLICKED (i.e., when the button is actively pressed down) */
+.h1-link:active {
+  color: red; /* Color changes to red while the link is being pressed */
+}
+
+.h2-link {
+  /* Inherit the size from H1 but remove default link styles */
+  text-decoration: none; /* Removes the underline */
+  color: #cf8641; /* Sets the default color */
+  cursor: pointer; /* Ensures the mouse cursor shows it's clickable */
+  font-weight: bold;
+  /* Optional: Smooth transition for color change */
+  transition: color 0.2s ease-in-out;
+}
+
+/* Color Change on HOVER */
+.h2-link:hover {
+  color: #e0efa8; /* Color changes to orange when the mouse is over it */
+}
+
+/* Color Change when CLICKED (i.e., when the button is actively pressed down) */
+.h2-link:active {
+  color: red; /* Color changes to red while the link is being pressed */
+}
+
+.h3-link {
+  /* Inherit the size from H1 but remove default link styles */
+  text-decoration: none; /* Removes the underline */
+  color: #00ff00; /* Sets the default color (e.g., pink or peach) */
+  cursor: pointer; /* Ensures the mouse cursor shows it's clickable */
+  font-weight: bold;
+  /* Optional: Smooth transition for color change */
+  transition: color 0.2s ease-in-out;
+}
+
+/* Color Change on HOVER */
+.h3-link:hover {
+  color: #afe8be; /* Color changes to orange when the mouse is over it */
+}
+
+/* Color Change when CLICKED (i.e., when the button is actively pressed down) */
+.h3-link:active {
+  color: #ff0038; /* Color changes to red while the link is being pressed */
+}
+
+/* Keep all your existing Desktop/Default CSS here */
+
+/* --- Start Mobile-Specific Hamburger CSS --- */
+
+.topnav .icon {
+  display: none;
+}
+
+@media screen and (max-width: 600px) {
+  /* Container switches to full-width block to hold stacked links */
+  .topnav {
+    width: 100%;
+    display: block;
+    border: none;
+    border-radius: 0;
+  }
+
+  /* Hide all links except the icon link */
+  .topnav a:not(.icon) {
+    display: none;
+    float: none;
+  }
+
+  /* Show and position the hamburger icon in the top right */
+  .topnav a.icon {
+    float: right;
+    display: block; /* Overrides the desktop 'display: none' */
+  }
+
+  /* **RESPONSIVE STATE** (When myFunction() adds the class) */
+  .topnav.responsive a {
+    float: none; /* Stacks the links */
+    display: block; /* Makes them full width */
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+  }
+
+  /* Ensure the icon keeps its right-float position when menu is open */
+  .topnav.responsive a.icon {
+    float: right;
+    border-bottom: none;
+  }
+}
+
+/* Style inputs with type="text", select elements and textareas */
+input[type="text"],
+select,
+textarea {
+  width: 100%; /* Full width */
+  padding: 12px; /* Some padding */
+  border: 1px solid #ccc; /* Gray border */
+  border-radius: 4px; /* Rounded borders */
+  box-sizing: border-box; /* Make sure that padding and width stays in place */
+  margin-top: 6px; /* Add a top margin */
+  margin-bottom: 16px; /* Bottom margin */
+  resize: vertical; /* Allow the user to vertically resize the textarea (not horizontally) */
+}
+
+/* Style the submit button with a specific background color etc */
+input[type="submit"] {
+  background-color: #6e3fd1;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+/* When moving the mouse over the submit button, add a darker green color */
+input[type="submit"]:hover {
+  background-color: #635147;
+}
+
+/* Add a background color and some padding around the form */
+.container {
+  border-radius: 5px;
+  background-color: #cf8641;
+  padding: 20px;
+}
+
+.grid-container {
+  /* 1. Enable CSS Grid layout */
+  display: grid;
+
+  /* 2. Define the columns: three equal-width tracks */
+  /* 'fr' is the fractional unit, making each column take up 1/3 of the available space. */
+  grid-template-columns: 1fr 1fr 1fr;
+
+  /* 3. Add space between the rows and columns */
+  gap: 20px; /* Adjust this value for desired spacing */
+
+  /* 4. Optional: Center the grid itself on the page */
+  max-width: 1200px; /* Set a max width for the whole container */
+  margin: 0 auto; /* Center the container */
+}
+
+@keyframes background-cycle {
+  0% {
+    background-color: #febb0b; /* Tomato */
+  }
+  25% {
+    background-color: #efdba8; /* Medium Sea Green */
+  }
+  50% {
+    background-color: #2596be; /* Royal Blue */
+  }
+  75% {
+    background-color: #fdba9d; /* Gold */
+  }
+  100% {
+    background-color: #cf8641; /* Back to Tomato */
+  }
+}
+
+.project-card {
+  max-width: 300px;
+  width: 100%;
+  padding: 10px;
+
+  /* Applying the rounded corners */
+  border-radius: 50px;
+
+  /* FIX 1: Use 'transparent' instead of 'none' */
+  background-color: transparent;
+
+  /* Correct syntax for no border */
+  border: none;
+
+  /* FIX 2: Set transition to none so it doesn't fight the animation */
+  transition: none;
+  overflow: hidden;
+}
+
+.project-card:hover {
+  animation: background-cycle 4s linear infinite;
+}
+
+.project-card img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 50px;
+
+  /* Ensure the image takes up the full width minus any padding on the card itself */
+  display: block;
+}
+/* 1. Remove the outline/border from the parent
+     and allow its children to wrap.
+*/
+.subheaders {
+  font-weight: 300;
+  border: none; /* Keep the border off the main container */
+  border-radius: 0;
+  /* Resetting margin to 0 for a cleaner start inside the card */
+  margin: 0;
+  /* Use flexbox to enable wrapping */
+  display: flex;
+  flex-wrap: wrap;
+  /* Add a little padding to the subheaders to space tags from its edge */
+  padding: 5px 0;
+  /* Setting width to 100% ensures it uses the full width of project-card */
+  width: 100%;
+  /* Important: Ensures the subheaders container does not exceed its parent */
+  box-sizing: border-box;
+}
+
+/* 3. Style the individual <span> tags */
+.subheaders span {
+  border: 2px solid black;
+  border-radius: 10px;
+
+  /* Internal spacing */
+  padding: 5px 10px;
+
+  /* External spacing between boxes */
+  margin: 5px;
+
+  /* Treat the span as a proper block for margin/padding */
+  display: inline-block;
+}
+
+.floated-profile-img {
+  float: left; /* This moves the image to the left, allowing text to wrap around it */
+  width: 200px; /* Set a specific, small width */
+  height: auto;
+  margin-right: 25px; /* Adds space between the image and the text */
+  margin-bottom: 15px; /* Adds space below the image */
+
+  /* Optional: Aesthetic styling */
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* IMPORTANT: Clear the float below the text/image section */
+.cv-heading {
+  /* Add the specific styles you want here, e.g.: */
+
+  font-size: 2.2em;
+  margin-top: 30px;
+  margin-bottom: 20px;
+  clear: left; /* Keep this if you used the `float` method earlier */
+}
+
+/* Optional: You can style the paragraph text if needed */
+.about-me-text {
+  /* Ensure paragraph has some top padding if needed to align with image */
+  padding-top: 5px;
+}

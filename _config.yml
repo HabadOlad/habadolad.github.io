@@ -1,0 +1,7 @@
+title: "Habads Blog"
+url: "https://habadolad.github.io"
+baseurl: "" # Leave this empty for your main github.io site
+
+# This helps Jekyll handle your existing folders
+include: [assets]
+exclude: [Gemfile, Gemfile.lock, vendor, .bundle]

@@ -17,13 +17,10 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <script
-      src="assets/scripts/firstWebsiteJS.js"
-      type="text/javascript"></script>
     <link rel="icon" href="assets/images/mestaringatarainbow.jpeg" />
-    <title>Hab-Blog!</title>
+    <title>portfolio</title>
   </head>
-  <body class="blog-page">
+  <body class="portfolio-page">
     <div class="nav-wrapper">
       <div class="topnav" id="myTopnav">
         <a href="javascript:void(0);" class="icon" onclick="myFunction()">
@@ -39,16 +36,10 @@
         >
       </div>
     </div>
-    <h1>Blog</h1>
-
-    <ul class="post-list">
-      {% for post in site.posts %}
-      <li>
-        <span class="date">{{ post.date | date: "%B %-d, %Y" }}</span>
-        <h2><a href="{{ post.url | relative_url }}">{{ post.title }}</a></h2>
-        <p>{{ post.excerpt | strip_html | truncatewords: 30 }}</p>
-      </li>
-      {% endfor %}
-    </ul>
+    <h1>Portfolio</h1>
+    <h1>Showing my portfolio!</h1>
+    <script
+      src="assets/scripts/firstWebsiteJS.js"
+      type="text/javascript"></script>
   </body>
 </html>
