@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>{{ page.title }}</title>
+
+    <link
+      rel="preload"
+      href="{{ '/assets/css/fonts/font (1)/Adesso-Bold.woff2' | relative_url }}"
+      as="font"
+      type="font/woff2"
+      crossorigin />
+    <link
+      rel="preload"
+      href="{{ '/assets/css/fonts/font (1)/AdessoW00-Regular.woff2' | relative_url }}"
+      as="font"
+      type="font/woff2"
+      crossorigin />
+
+    <link
+      href="{{ '/assets/css/firstSiteStyling.css' | relative_url }}"
+      rel="stylesheet" />
+  </head>
+
+  <body class="{{ page.body_class }}">
+    <div class="nav-wrapper">
+      <div class="topnav" id="myTopnav">
+        <a href="javascript:void(0);" class="icon" onclick="myFunction()"
+          >&#9776;</a
+        >
+        <a class="link-home" href="{{ '/' | relative_url }}">HOME</a>
+        <a class="link-projects" href="{{ '/projects.html' | relative_url }}"
+          >PROJECTS</a
+        >
+        <a class="link-blog" href="{{ '/blog.html' | relative_url }}">BLOG</a>
+        <a class="link-cv" href="{{ '/cv.html' | relative_url }}">ABOUTME&CV</a>
+        <a
+          class="link-contact"
+          href="{{ '/contactpage.html' | relative_url }}"
+          target="_blank"
+          >CONTACT</a
+        >
+      </div>
+    </div>
+
+    {{ content }}
+
+    <footer id="footer">
+      <p>© 2025 Habad Olad. All rights reserved.</p>
+    </footer>
+
+    <script src="{{ '/assets/scripts/firstWebsiteJS.js' | relative_url }}"></script>
+  </body>
+</html>

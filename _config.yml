@@ -4,4 +4,9 @@ baseurl: "" # Leave this empty for your main github.io site
 
 # This helps Jekyll handle your existing folders
 include: [assets]
-exclude: [Gemfile, Gemfile.lock, vendor, .bundle]
+# Disable the GitHub Metadata plugin locally to avoid SSL errors
+exclude: [Gemfile, Gemfile.lock, vendor, .bundle, .jekyll-cache]
+plugins:
+  - jekyll-feed # If you use it
+  - jekyll-seo-tag # If you use it
+# Do NOT list github-pages or jekyll-github-metadata here

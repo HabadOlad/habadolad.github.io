@@ -1,40 +1,33 @@
-<!-- <!DOCTYPE html> -->
-<html>
-        <head>
-        <link rel="preload" href="assets/css/fonts/font (1)/Adesso-Bold.woff2" as="font" type="font/woff2" crossorigin>
-        <link rel="preload" href="/assets/css/fonts/font (1)/AdessoW00-Regular.woff2" as="font" type="font/woff2" crossorigin>
-        <link href="assets/css/firstSiteStyling.css" rel="stylesheet" />
-        <meta charset="UTF-8">
-        <meta name="description" content="I'm HABAD OLAD,  a programmer by day, and uh... a slightly sillier programmer at night. ">
-        <meta name="author" content="Habad Olad">
-        <meta name="keywords" content="Learning, Portfolio, Stress">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="icon" href="assets/images/mestaringatarainbow.jpeg">   
-  <title>Habad's corner of the web!</title>
-        </head>
-  <body class="home-page">
-    <div class="nav-wrapper">
-        <div class="topnav" id="myTopnav"> 
-          <a href="javascript:void(0);" class="icon" onclick="myFunction()">
-            &#9776; 
-          </a>
-          <a class="link-home" href="https://habadolad.com/" >HOME</a>
-          <a class="link-projects" href="projects.html" >PROJECTS</a>
-          <a class="link-blog" href="blog.html" >BLOG</a>
-          <a class="link-cv" href="cv.html" >ABOUTME&CV</a>
-          <a class="link-contact" href="contactpage.html" target="_blank" >CONTACT</a>
-        </div>
-      </div>
-      <h1 class="intropage" >Hello there! I'm  <span class="tooltip-trigger" id="click-word">HABAD OLAD <img src="assets/images/mestaringatarainbow.jpeg" alt="A photo for the tooltip" class="tooltip-photo"> </span>,  a <a class="h1-link" href="https://github.com/HabadOlad" target="_blank">programmer</a> by day, and uh... a slightly sillier programmer at <a class="h3-link" href="https://habadolad.com/zork.html"" target="_blank">night</a>. 
-        
-        
-        <a  class="h2-link" href="contactpage.html" target="_blank">Ask me</a> to build something! I dare you !</h1> 
-      <h1 class="intropage" id="clock"></h1>
+---
+layout: default
+title: "Habad's corner of the web!"
+body_class: "home-page"
+---
 
+<h1 class="intropage">
+  Hello there! I'm
+  <span class="tooltip-trigger" id="click-word">
+    HABAD OLAD
+    <img
+      src="{{ '/assets/images/mestaringatarainbow.jpeg' | relative_url }}"
+      alt="A photo of Habad"
+      class="tooltip-photo" /> </span
+  >, a
+  <a class="h1-link" href="https://github.com/HabadOlad" target="_blank"
+    >programmer</a
+  >
+  by day, and uh... a slightly sillier programmer at
+  <a class="h3-link" href="{{ '/zork.html' | relative_url }}" target="_blank"
+    >night</a
+  >.
 
-<footer id="footer"></footer>
+  <a
+    class="h2-link"
+    href="{{ '/contactpage.html' | relative_url }}"
+    target="_blank"
+    >Ask me</a
+  >
+  to build something! I dare you!
+</h1>
 
-    </body>
-</body>
-<script src="assets/scripts/firstWebsiteJS.js" type="text/javascript"></script>
-</html>
+<h1 class="intropage" id="clock"></h1>
