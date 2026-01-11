@@ -1,54 +1,29 @@
-<!DOCTYPE html>
-<html lang="en">
-  <head>
-    <link
-      rel="preload"
-      href="assets/css/fonts/font (1)/Adesso-Bold.woff2"
-      as="font"
-      type="font/woff2"
-      crossorigin />
-    <link
-      rel="preload"
-      href="/assets/css/fonts/font (1)/AdessoW00-Regular.woff2"
-      as="font"
-      type="font/woff2"
-      crossorigin />
-    <link href="assets/css/firstSiteStyling.css" rel="stylesheet" />
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <script
-      src="assets/scripts/firstWebsiteJS.js"
-      type="text/javascript"></script>
-    <link rel="icon" href="assets/images/mestaringatarainbow.jpeg" />
-    <title>Hab-Blog!</title>
-  </head>
-  <body class="blog-page">
-    <div class="nav-wrapper">
-      <div class="topnav" id="myTopnav">
-        <a href="javascript:void(0);" class="icon" onclick="myFunction()">
-          &#9776;
-        </a>
+---
+layout: default
+title: "Hab-Blog!"
+body_class: "blog-page"
+---
 
-        <a class="link-home" href="https://habadolad.com/">HOME</a>
-        <a class="link-projects" href="projects.html">PROJECTS</a>
-        <a class="link-blog" href="blog.html">BLOG</a>
-        <a class="link-cv" href="cv.html">ABOUTME&CV</a>
-        <a class="link-contact" href="contactpage.html" target="_blank"
-          >CONTACT</a
-        >
-      </div>
-    </div>
-    <h1>Blog</h1>
+<h1>Blog</h1>
 
-    <ul class="post-list">
-      {% for post in site.posts %}
-      <li>
-        <span class="date">{{ post.date | date: "%B %-d, %Y" }}</span>
-        <h2><a href="{{ post.url | relative_url }}">{{ post.title }}</a></h2>
-        <p>{{ post.excerpt | strip_html | truncatewords: 30 }}</p>
-      </li>
-      {% endfor %}
-    </ul>
-  </body>
-</html>
+<ul class="post-list">
+  {% for post in site.posts %}
+  <li
+    style="
+      list-style: none;
+      margin-bottom: 40px;
+      border-bottom: 1px solid #000;
+      padding-bottom: 20px;
+    ">
+    <span class="date" style="font-weight: 300"
+      >{{ post.date | date: "%B %-d, %Y" }}</span
+    >
+    <h2>
+      <a class="h1-link" href="{{ post.url | relative_url }}"
+        >{{ post.title }}</a
+      >
+    </h2>
+    <p>{{ post.excerpt | strip_html | truncatewords: 30 }}</p>
+  </li>
+  {% endfor %}
+</ul>
