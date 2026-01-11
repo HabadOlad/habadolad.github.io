@@ -1,5 +1,5 @@
 const footer = document.getElementById("footer");
-footer.innerHTML = `<footer> &copy; ${new Date().getFullYear()} Habad Olad. All rights reserved.</footer>`;
+footer.innerHTML = `<footer> &copy; 2023 to ${new Date().getFullYear()} Habad Olad. All rights reserved.</footer>`;
 
 document.addEventListener("DOMContentLoaded", function () {
   const trigger = document.getElementById("click-word");
