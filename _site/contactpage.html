@@ -1,79 +1,90 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <link
-      rel="preload"
-      href="assets/css/fonts/font (1)/Adesso-Bold.woff2"
-      as="font"
-      type="font/woff2"
-      crossorigin />
-    <link
-      rel="preload"
-      href="/assets/css/fonts/font (1)/AdessoW00-Regular.woff2"
-      as="font"
-      type="font/woff2"
-      crossorigin />
-    <link rel="stylesheet" href="assets/css/firstSiteStyling.css" />
     <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="icon" href="assets/images/mestaringatarainbow.jpeg" />
-    <title>contact page</title>
+    <title>Contact Me!</title>
+
+    <link
+      rel="preload"
+      href="/assets/css/fonts/font%20(1)/Adesso-Bold.woff2"
+      as="font"
+      type="font/woff2"
+      crossorigin />
+    <link
+      rel="preload"
+      href="/assets/css/fonts/font%20(1)/AdessoW00-Regular.woff2"
+      as="font"
+      type="font/woff2"
+      crossorigin />
+
+    <link
+      href="/assets/css/firstSiteStyling.css"
+      rel="stylesheet" />
+
+    <link
+      rel="icon"
+      href="/assets/images/mestaringatarainbow.jpeg" />
   </head>
+
   <body class="contact-page">
     <div class="nav-wrapper">
       <div class="topnav" id="myTopnav">
-        <a href="javascript:void(0);" class="icon" onclick="myFunction()">
-          &#9776;
-        </a>
-
-        <a class="link-home" href="https://habadolad.com/">HOME</a>
-        <a class="link-projects" href="projects.html">PROJECTS</a>
-        <a class="link-blog" href="blog.html">BLOG</a>
-        <a class="link-cv" href="cv.html" >ABOUTME&CV</a>
-        <a class="link-contact" href="contactpage.html" target="_blank"
+        <a href="javascript:void(0);" class="icon" onclick="myFunction()"
+          >&#9776;</a
+        >
+        <a class="link-home" href="/">HOME</a>
+        <a class="link-projects" href="/projects.html"
+          >PROJECTS</a
+        >
+        <a class="link-blog" href="/blog.html">BLOG</a>
+        <a class="link-cv" href="/cv.html">ABOUTME&CV</a>
+        <a
+          class="link-contact"
+          href="/contactpage.html"
+          target="_blank"
           >CONTACT</a
         >
       </div>
     </div>
+
     <div class="container">
-      <form
-        action="mailto:habadolad@outlook.com"
-        method="post"
-        enctype="text/plain">
-        <label for="fname">First Name</label>
-        <input
-          type="text"
-          id="fname"
-          name="firstname"
-          placeholder="Your name.." />
+  <form
+    action="mailto:habadolad@outlook.com"
+    method="post"
+    enctype="text/plain">
+    <label for="fname">First Name</label>
+    <input type="text" id="fname" name="firstname" placeholder="Your name.." />
 
-        <label for="lname">Last Name</label>
-        <input
-          type="text"
-          id="lname"
-          name="lastname"
-          placeholder="Your last name.." />
+    <label for="lname">Last Name</label>
+    <input
+      type="text"
+      id="lname"
+      name="lastname"
+      placeholder="Your last name.." />
 
-        <label for="lname">Email Address</label>
-        <input
-          type="text"
-          id="emailaddress"
-          name="Email"
-          placeholder="yourname@outlook.com" />
+    <label for="lname">Email Address</label>
+    <input
+      type="text"
+      id="emailaddress"
+      name="Email"
+      placeholder="yourname@outlook.com" />
 
-        <label for="subject">Subject</label>
-        <textarea
-          id="subject"
-          name="subject"
-          placeholder="Write something.."
-          style="height: 200px"></textarea>
+    <label for="subject">Subject</label>
+    <textarea
+      id="subject"
+      name="subject"
+      placeholder="Write something.."
+      style="height: 200px"></textarea>
 
-        <input type="submit" value="Submit" />
-      </form>
-    </div>
-    <script
-      src="assets/scripts/firstWebsiteJS.js"
-      type="text/javascript"></script>
+    <input type="submit" value="Submit" />
+  </form>
+</div>
+<script src="assets/scripts/firstWebsiteJS.js" type="text/javascript"></script>
+
+
+    <footer id="footer"></footer>
+
+    <script src="/assets/scripts/firstWebsiteJS.js"></script>
   </body>
 </html>
