@@ -1,20 +1,22 @@
 /* 1. BOLD VARIANT */
+/* 1. BOLD VARIANT */
 @font-face {
-  font-family: "Adesso"; /* Use ONE consistent family name */
-  font-weight: 700; /* Maps to the bold file */
+  font-family: "Adesso";
+  font-weight: 700;
   font-style: normal;
-  src: url("/fonts/font (1)/Adesso-Bold.woff2") format("woff2"),
-    url("/fonts/font (1)/Adesso-Bold.woff") format("woff");
+  /* .. means "go out of the css folder, then look into the fonts folder" */
+  src: url("../css/fonts/font (1)/Adesso-Bold.woff2") format("woff2"),
+    url("../css/fonts/font (1)/Adesso-Bold.woff") format("woff");
   font-display: swap;
 }
 
 /* 2. THIN/REGULAR VARIANT */
 @font-face {
-  font-family: "Adesso"; /* Use the SAME family name */
-  font-weight: 300; /* Maps to the regular file (to use for a thin look) */
+  font-family: "Adesso";
+  font-weight: 300;
   font-style: normal;
-  src: url("fonts/font (1)/AdessoW00-Regular.woff2") format("woff2"),
-    url("fonts/font (1)/AdessoW00-Regular.woff") format("woff");
+  src: url("../css/fonts/font (1)/AdessoW00-Regular.woff2") format("woff2"),
+    url("../css/fonts/font (1)/AdessoW00-Regular.woff") format("woff");
   font-display: swap;
 }
 
