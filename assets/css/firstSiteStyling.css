@@ -3,8 +3,8 @@
   font-family: "Adesso"; /* Use ONE consistent family name */
   font-weight: 700; /* Maps to the bold file */
   font-style: normal;
-  src: url("fonts/font (1)/Adesso-Bold.woff2") format("woff2"),
-    url("fonts/font (1)/Adesso-Bold.woff") format("woff");
+  src: url("/fonts/font (1)/Adesso-Bold.woff2") format("woff2"),
+    url("/fonts/font (1)/Adesso-Bold.woff") format("woff");
   font-display: swap;
 }
 
@@ -49,12 +49,12 @@ body {
 
 /* --- Projects Page Styles --- */
 .projects-page {
-  background-color: #e04b29; /* peach pink */
+  background-color: #e04b29; /* strong red */
 }
 
 /* --- Blog Page Styles --- */
 .blog-page {
-  background-color: #fdba9d; /* strong red*/
+  background-color: #fdba9d; /* peach*/
 }
 
 /* --- CV Page Styles --- */
