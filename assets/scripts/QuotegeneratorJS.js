@@ -58,7 +58,7 @@ var quotes = [
   "Mental pain is less dramatic than physical pain, but it is more common and also more hard to bear. The frequent attempt to conceal mental pain increases the burden: it is easier to say “My tooth is aching” than to say “My heart is broken.",
   "Do you not see how necessary a world of pains and troubles is to school an intelligence and make it a soul?",
   "Noble deeds and hot baths are the best cures for depression.",
-  "'ll never forget how the depression and loneliness felt good and bad at the same time. Still does.",
+  "I'll never forget how the depression and loneliness felt good and bad at the same time. Still does.",
   "The sun stopped shining for me is all. The whole story is: I am sad. I am sad all the time and the sadness is so heavy that I can't get away from it. Not ever",
   "Even for me life had its gleams of sunshine",
   "In addition to my other numerous acquaintances, I have one more intimate confidant… My depression is the most faithful mistress I have known — no wonder, then, that I return the love.",
