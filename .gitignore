@@ -1,0 +1,14 @@
+# OS junk
+.DS_Store
+thumbs.db
+
+# Metadata
+.sass-cache/
+.jekyll-cache/
+.jekyll-metadata
+
+# The compiled website (GitHub builds this for you)
+_site/
+
+# Editor settings
+.vscode/
