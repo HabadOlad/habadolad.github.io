@@ -1,12 +1,11 @@
 /* 1. BOLD VARIANT */
-/* 1. BOLD VARIANT */
 @font-face {
   font-family: "Adesso";
   font-weight: 700;
   font-style: normal;
   /* .. means "go out of the css folder, then look into the fonts folder" */
-  src: url("../css/fonts/font (1)/Adesso-Bold.woff2") format("woff2"),
-    url("../css/fonts/font (1)/Adesso-Bold.woff") format("woff");
+  src: url("../css/font/Adesso-Bold.woff2") format("woff2"),
+    url("../css/font/Adesso-Bold.woff") format("woff");
   font-display: swap;
 }
 
@@ -15,8 +14,8 @@
   font-family: "Adesso";
   font-weight: 300;
   font-style: normal;
-  src: url("../css/fonts/font (1)/AdessoW00-Regular.woff2") format("woff2"),
-    url("../css/fonts/font (1)/AdessoW00-Regular.woff") format("woff");
+  src: url("../css/font/AdessoW00-Regular.woff2") format("woff2"),
+    url("../css/font/AdessoW00-Regular.woff") format("woff");
   font-display: swap;
 }
 
