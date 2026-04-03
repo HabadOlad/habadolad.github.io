@@ -131,12 +131,6 @@ h1:not(.intropage) {
   color: white;
 }
 
-/* PORTFOLIO -  */
-.link-portfolio:hover {
-  background-color: #2596be; /* darkish blue */
-  color: white;
-}
-
 /* PROJECTS */
 .link-projects:hover {
   background-color: #e04b29; /* strong red */
@@ -217,7 +211,7 @@ h1:not(.intropage) {
 .h2-link {
   /* Inherit the size from H1 but remove default link styles */
   text-decoration: none; /* Removes the underline */
-  color: #cf8641; /* Sets the default color */
+  color: #e04b29; /* Sets the default color */
   cursor: pointer; /* Ensures the mouse cursor shows it's clickable */
   font-weight: bold;
   /* Optional: Smooth transition for color change */
@@ -231,7 +225,7 @@ h1:not(.intropage) {
 
 /* Color Change when CLICKED (i.e., when the button is actively pressed down) */
 .h2-link:active {
-  color: red; /* Color changes to red while the link is being pressed */
+  color: #2596be; /* Color changes to red while the link is being pressed */
 }
 
 .h3-link {
