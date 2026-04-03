@@ -44,11 +44,6 @@ body {
   background-color: #efdba8; /* peachish */
 }
 
-/* --- Portfolio Page Styles --- */
-.portfolio-page {
-  background-color: #2596be; /* blue */
-}
-
 /* --- Projects Page Styles --- */
 .projects-page {
   background-color: #e04b29; /* strong red */
@@ -62,11 +57,6 @@ body {
 /* --- CV Page Styles --- */
 .cv-page {
   background-color: #febb0b; /* gold yellow */
-}
-
-/* --- Contact Page Styles --- */
-.contact-page {
-  background-color: #cf8641; /* dark orange */
 }
 
 h1:not(.intropage) {
@@ -146,12 +136,6 @@ h1:not(.intropage) {
 /* CV  */
 .link-cv:hover {
   background-color: #febb0b; /* gold */
-  color: white;
-}
-
-/* CONTACT  */
-.link-contact:hover {
-  background-color: #cf8641; /* funky brown */
   color: white;
 }
 
@@ -290,30 +274,6 @@ h1:not(.intropage) {
     float: right;
     border-bottom: none;
   }
-}
-
-/* Style inputs with type="text", select elements and textareas */
-input[type="text"],
-select,
-textarea {
-  width: 100%; /* Full width */
-  padding: 12px; /* Some padding */
-  border: 1px solid #ccc; /* Gray border */
-  border-radius: 4px; /* Rounded borders */
-  box-sizing: border-box; /* Make sure that padding and width stays in place */
-  margin-top: 6px; /* Add a top margin */
-  margin-bottom: 16px; /* Bottom margin */
-  resize: vertical; /* Allow the user to vertically resize the textarea (not horizontally) */
-}
-
-/* Style the submit button with a specific background color etc */
-input[type="submit"] {
-  background-color: #6e3fd1;
-  color: white;
-  padding: 12px 20px;
-  border: none;
-  border-radius: 4px;
-  cursor: pointer;
 }
 
 /* When moving the mouse over the submit button, add a darker green color */
