@@ -264,7 +264,7 @@ h1:not(.intropage) {
   .topnav.responsive a {
     float: none; /* Stacks the links */
     display: block; /* Makes them full width */
-    text-align: left;
+    text-align: right;
     border-bottom: 1px solid #ddd;
   }
 
@@ -413,4 +413,21 @@ input[type="submit"]:hover {
 .about-me-text {
   /* Ensure paragraph has some top padding if needed to align with image */
   padding-top: 5px;
+}
+
+.side-assets {
+  position: fixed;
+  top: 20px; /* Distance from the top */
+  left: 20px;
+  display: flex;
+  flex-direction: row;
+  gap: 15px; /* Space between the images */
+  z-index: 1000; /* Keeps them on top of other elements */
+}
+
+.side-assets img {
+  width: 40px;
+  height: auto;
+  opacity: 0.8;
+  transition: opacity 0.3s;
 }
