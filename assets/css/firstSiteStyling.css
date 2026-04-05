@@ -274,18 +274,6 @@ h1:not(.intropage) {
   }
 }
 
-/* When moving the mouse over the submit button, add a darker green color */
-input[type="submit"]:hover {
-  background-color: #635147;
-}
-
-/* Add a background color and some padding around the form */
-.container {
-  border-radius: 5px;
-  background-color: #cf8641;
-  padding: 20px;
-}
-
 .grid-container {
   /* 1. Enable CSS Grid layout */
   display: grid;
