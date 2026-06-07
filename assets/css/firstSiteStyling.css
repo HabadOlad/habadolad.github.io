@@ -48,6 +48,11 @@ body {
   background-color: #e04b29; /* strong red */
 }
 
+/* --- Retro Game Page Styles --- */
+.retrogames-page {
+  background-color: #6fa196; /* strong red */
+}
+
 /* --- Blog Page Styles --- */
 .blog-page {
   background-color: #fdba9d; /* peach*/
@@ -123,6 +128,11 @@ h1:not(.intropage) {
 /* PROJECTS */
 .link-projects:hover {
   background-color: #e04b29; /* strong red */
+  color: white;
+}
+
+.link-games:hover {
+  background-color: #6fa196; /* forrest green*/
   color: white;
 }
 
