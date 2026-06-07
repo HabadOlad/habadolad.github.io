@@ -27,6 +27,10 @@ html {
   font-family: "Adesso";
 }
 
+h2 {
+  text-align: center;
+}
+
 body {
   background-color: #efdba8;
   /* Use only font-family and include a generic fallback */
