@@ -33,13 +33,13 @@ Habadcorp, Inc. All rights reserved.
 Habad's fun website is a registered trademark of
 HabadCorp, Inc.</div>`;
 outputEl.innerHTML += `<br />`;
-outputEl.innerHTML += `<pre class="welcome-art">${`                                                                 
-                                                                 
-██  ██ ▄████▄ █████▄ ▄████▄ ████▄    ▄████▄ ██     ▄████▄ ████▄  
-██████ ██▄▄██ ██▄▄██ ██▄▄██ ██  ██   ██  ██ ██     ██▄▄██ ██  ██ 
-██  ██ ██  ██ ██▄▄█▀ ██  ██ ████▀    ▀████▀ ██████ ██  ██ ████▀  
-                                                                            
-                                                                           
+outputEl.innerHTML += `<pre class="welcome-art">${`   
+dMP dMP .aMMMb  dMMMMb  .aMMMb  dMMMMb        .aMMMb  dMP     .aMMMb  dMMMMb 
+dMP dMP dMP"dMP dMP"dMP dMP"dMP dMP VMP       dMP"dMP dMP     dMP"dMP dMP VMP 
+dMMMMMP dMMMMMP dMMMMK" dMMMMMP dMP dMP       dMP dMP dMP     dMMMMMP dMP dMP  
+dMP dMP dMP dMP dMP.aMF dMP dMP dMP.aMP       dMP.aMP dMP     dMP dMP dMP.aMP   
+dMP dMP dMP dMP dMMMMP" dMP dMP dMMMMP"        VMMMP" dMMMMMP dMP dMP dMMMMP"    
+                                                                                                                                            
 `}</pre>`;
 outputEl.innerHTML += `<br />`;
 outputEl.innerHTML += `<div>You stand before a glowing CRT monitor humming quietly in a dark room. On screen: a live portfolio session waiting for input.</div>`;
