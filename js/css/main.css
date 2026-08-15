@@ -1,0 +1,129 @@
+/* --- Global Styles --- */
+@font-face {
+  font-family: "VT323";
+  font-weight: 400;
+  font-style: normal;
+  /* .. means "go out of the css folder, then look into the fonts folder" */
+  src: url("./fonts/VT323-Regular.ttf") format("truetype");
+  font-display: swap;
+}
+
+body,
+html {
+  background-image: repeating-linear-gradient(
+    transparent 0,
+    rgba(0, 0, 0, 0.8) 1px,
+    transparent 2px
+  );
+  height: 100%;
+  margin: 0;
+  /* Dark blue/purple background for a retro theme */
+  background-color: black;
+  font-family: "VT323", monospace;
+  color: #e0e0e0; /* Light green/cyan text color */
+  font-size: 25px;
+}
+
+/* --- Flickering Keyframes --- */
+/* This animation provides the subtle, unsteady text effect */
+@keyframes flicker {
+  /* Most of the time, the text is fully visible with a strong glow */
+  0%,
+  19%,
+  21%,
+  23%,
+  25%,
+  54%,
+  56%,
+  100% {
+    text-shadow: 0 0 1px #ffffff, 0 0 4px #b0b0b0;
+    opacity: 1;
+  }
+  /* Occasionally, briefly reduce the glow and opacity for the flicker effect */
+  20%,
+  24%,
+  55% {
+    text-shadow: 0 0 1px #ffffff;
+    opacity: 0.85;
+  }
+}
+
+/* --- Terminal Output Area --- */
+#terminal {
+  padding: 20px;
+  height: 100%;
+  box-sizing: border-box;
+  overflow-y: auto;
+
+  /* 1. Apply the text glow immediately */
+  text-shadow: 0 0 1px #ffffff, 0 0 4px #b0b0b0;
+
+  /* 2. Apply the flicker animation */
+  animation: flicker 2.5s infinite alternate;
+
+  /* 3. Optional: Subtle horizontal lines (scanlines) for authenticity */
+  background-image: repeating-linear-gradient(
+    transparent 0,
+    rgba(0, 0, 0, 0.4) 1px,
+    transparent 2px
+  );
+}
+
+#status-bar {
+  position: sticky;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: #ffffff; /* Crisper, high-contrast retro white */
+  color: #000000; /* Solid black text */
+  display: flex;
+  justify-content: space-between; /* Authentic alignment trick */
+  padding: 4px 20px; /* Slightly more vertical breathing room for VT323 */
+  box-sizing: border-box;
+  z-index: 9999;
+  font-family: "VT323", monospace;
+  font-size: 25px;
+  text-transform: uppercase; /* Ensures all status text defaults to uppercase */
+}
+
+/* --- Input Area --- */
+#input-line {
+  display: flex;
+  align-items: center;
+  width: 100%;
+}
+
+#output {
+  margin-top: 35px;
+}
+
+#input {
+  /* CHANGE THIS: remove width: 100% and replace it with flex-grow */
+  flex-grow: 1;
+
+  border: none;
+  background: none;
+  outline: none;
+  color: inherit;
+  font-family: "VT323", monospace;
+  font-size: 25px;
+
+  /* --- FIX: ADDED FLICKER EFFECT TO INPUT --- */
+  text-shadow: 0 0 2px #fff0c2, 0 0 10px #ffb000;
+  animation: flicker 2s infinite alternate;
+  /* ------------------------------------- */
+}
+
+.welcome-art {
+  margin: 0;
+  font-family: monospace;
+  line-height: 1.2;
+  background: transparent;
+  text-align: center;
+
+  /* Authentic 1980s Amber Monitor Colors */
+  color: #ff00ff;
+
+  /* Optional: Give it a very subtle text glow like an old CRT monitor */
+  text-shadow: 0 0 4px rgba(255, 176, 0, 0.7);
+}
