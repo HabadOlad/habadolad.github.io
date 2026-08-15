@@ -120,6 +120,7 @@ html {
   line-height: 1.2;
   background: transparent;
   text-align: center;
+  transform: scale(0.6);
 
   /* Authentic 1980s Amber Monitor Colors */
   color: #ff00ff;
