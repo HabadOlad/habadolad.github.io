@@ -8,7 +8,7 @@ html {
   height: 100%;
   margin: 0;
   /* Dark blue/purple background for a retro theme */
-  background-color: black;
+  background-color: #111111;
   color: #e0e0e0; /* Light green/cyan text color */
   font-size: 25px;
   font-family: var(--font-retro);
@@ -119,7 +119,7 @@ html {
   white-space: pre; /* Preserves ASCII spacing */
 
   /* Authentic 1980s Amber Monitor Colors */
-  color: #ff00ff;
+  color: #ff5500;
 
   /* Optional: Give it a very subtle text glow like an old CRT monitor */
   text-shadow: 0 0 4px rgba(255, 176, 0, 0.7);
