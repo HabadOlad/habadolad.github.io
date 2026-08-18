@@ -29,9 +29,7 @@ locationBar.innerHTML = `Greetings! Salutations! You've stumbled upon the most d
 
 // Initial output for the text
 outputEl.innerHTML += `<div>Habad's funky website,Copyright (c) 2021 - ${new Date().getFullYear()} ,
-Habadcorp, Inc. All rights reserved.
-Habad's fun website is a registered trademark of
-HabadCorp, Inc.</div>`;
+Habadcorp, Inc. The developer who crafted this dungeon speaks in HTML5, CSS grid, and Vanilla JS. Beyond this terminal lies an inventory of past projects, code experiments, and dev logs.</div>`;
 outputEl.innerHTML += `<br />`;
 outputEl.innerHTML += `<pre class="welcome-art">${`   
 ░██     ░██            ░██                          ░██      ░██████   ░██                   ░██ 
@@ -47,7 +45,6 @@ outputEl.innerHTML += `<pre class="welcome-art">${`
 `}</pre>`;
 outputEl.innerHTML += `<br />`;
 outputEl.innerHTML += `<div>You stand before a glowing CRT monitor humming quietly in a dark room. On screen: a live portfolio session waiting for input.</div>`;
-outputEl.innerHTML += `<div>The developer who crafted this dungeon speaks in HTML5, CSS grid, and Vanilla JS. Beyond this terminal lies an inventory of past projects, code experiments, and dev logs.</div>`;
 outputEl.innerHTML += `<br />`;
 outputEl.innerHTML += `<div>Do you wish to initialize the portfolio session? Read thy blog? Or enquire about the fine gentleman who runs this page?</div>`;
 outputEl.innerHTML += `<br />`;

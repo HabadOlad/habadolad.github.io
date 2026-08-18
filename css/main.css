@@ -110,6 +110,13 @@ html {
   background: transparent;
   text-align: center;
   transform: scale(0.75);
+  /* Scale font based on screen width: 1.5vw shrinks on smaller screens */
+  font-size: clamp(8px, 1.5vw, 18px);
+
+  /* Ensure it doesn't force horizontal scroll */
+  max-width: 100%;
+  overflow-x: hidden;
+  white-space: pre; /* Preserves ASCII spacing */
 
   /* Authentic 1980s Amber Monitor Colors */
   color: #ff00ff;
