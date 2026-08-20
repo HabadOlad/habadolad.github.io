@@ -124,3 +124,8 @@ html {
   /* Optional: Give it a very subtle text glow like an old CRT monitor */
   text-shadow: 0 0 4px rgba(255, 176, 0, 0.7);
 }
+
+h1 {
+  color: #00ff66;
+  text-align: center;
+}

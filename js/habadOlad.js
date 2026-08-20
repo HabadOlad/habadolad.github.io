@@ -28,9 +28,6 @@ inputEl.addEventListener("keydown", function (event) {
 locationBar.innerHTML = `Greetings! Salutations! You've stumbled upon the most dope happening website in the web! `;
 
 // Initial output for the text
-outputEl.innerHTML += `<div>Habad's funky website,Copyright (c) 2021 - ${new Date().getFullYear()} ,
-Habadcorp, Inc. The developer who crafted this dungeon speaks in HTML5, CSS grid, and Vanilla JS. Beyond this terminal lies an inventory of past projects, code experiments, and dev logs.</div>`;
-outputEl.innerHTML += `<br />`;
 outputEl.innerHTML += `<pre class="welcome-art">${`   
 ░██     ░██            ░██                          ░██      ░██████   ░██                   ░██ 
 ░██     ░██            ░██                          ░██     ░██   ░██  ░██                   ░██ 
