@@ -1,6 +1,7 @@
 /* Custom properties */
 :root {
   --font-retro: "Silkscreen", monospace;
+  --colour-ambercrt: #ff5500;
 }
 
 @font-face {

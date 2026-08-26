@@ -47,8 +47,8 @@ document.addEventListener("DOMContentLoaded", () => {
           playerName = inputText;
           inputEl.value = "";
 
-          outputEl.innerHTML += `<div>"Ah, so your name is <strong>${playerName}</strong> " welcome to the site... </div><br />`;
-          outputEl.innerHTML += `<div>"Welcome to the Habad Olads corner of the net ${playerName}...do not overstay your welcome here......." </div><br />`;
+          outputEl.innerHTML += `<div>You register as <strong>"${playerName}."</strong> The terminal hums in acknowledgment. Welcome to Habad Olad's corner of the net—watch your step, and do not overstay your welcome.</div><br />`;
+          outputEl.innerHTML += `<div>So ${playerName} type Help....or PLAY </div><br />`;
 
           nameprompt.innerHTML = "$> ";
         }

@@ -119,14 +119,14 @@ html {
   white-space: pre; /* Preserves ASCII spacing */
 
   /* Authentic 1980s Amber Monitor Colors */
-  color: #ff5500;
+  color: var(--colour-ambercrt);
 
   /* Optional: Give it a very subtle text glow like an old CRT monitor */
   text-shadow: 0 0 4px rgba(255, 176, 0, 0.7);
 }
 
 h1 {
-  color: #ff5500;
+  color: var(--colour-ambercrt);
   text-align: center;
 }
 
@@ -145,4 +145,8 @@ h1 {
   text-decoration: none;
   margin: 0 18px;
   letter-spacing: 1px;
+}
+
+.navbar a:hover {
+  color: var(--colour-ambercrt);
 }
