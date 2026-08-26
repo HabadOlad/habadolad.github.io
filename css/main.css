@@ -129,3 +129,20 @@ h1 {
   color: #00ff66;
   text-align: center;
 }
+
+.navbar {
+  overflow: hidden;
+  background-color: #ff5500;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  text-align: center;
+  font-family: var(--font-retro);
+}
+
+.navbar a {
+  color: #ffffff;
+  text-decoration: none;
+  margin: 0 18px;
+  letter-spacing: 1px;
+}
