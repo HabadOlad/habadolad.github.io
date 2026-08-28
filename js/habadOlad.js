@@ -48,7 +48,7 @@ document.addEventListener("DOMContentLoaded", () => {
           inputEl.value = "";
 
           outputEl.innerHTML += `<div>You register as <strong>"${playerName}."</strong> The terminal hums in acknowledgment. Welcome to Habad Olad's corner of the net—watch your step, and do not overstay your welcome.</div><br />`;
-          outputEl.innerHTML += `<div>So ${playerName} type Help....or PLAY </div><br />`;
+          outputEl.innerHTML += `<div>So ${playerName} type HELP, PORTFOLIO, BLOG , ABOUT, CONTACT....or PLAY </div><br />`;
 
           nameprompt.innerHTML = "$> ";
         }
@@ -66,6 +66,7 @@ document.addEventListener("DOMContentLoaded", () => {
 ░██     ░██  ░█████░██ ░██░█████   ░█████░██  ░█████░██      ░██████   ░██  ░█████░██  ░█████░██ 
 `}</pre><br />`;
     outputEl.innerHTML += `<div>You stand before a glowing CRT monitor humming quietly in a dark room. On screen: a live portfolio session waiting for input.</div><br />`;
-    outputEl.innerHTML += `<div>Do you wish to initialize the portfolio session? Read thy blog? Or enquire about the fine gentleman who runs this page?</div><br />`;
+    outputEl.innerHTML += `<div>The screen blinks: <strong>[${new Date()}]</strong><br />`;
+    outputEl.innerHTML += `<div>The terminal hums, cursor blinking expectantly on the glass.What would you like to do?</div><br />`;
   }
 });
