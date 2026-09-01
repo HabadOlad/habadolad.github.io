@@ -12,7 +12,7 @@ document.addEventListener("DOMContentLoaded", () => {
         break;
       case path.includes("/portfolio"):
         locationBar.innerHTML =
-          "LOCATION: PORTFOLIO... YOU ARE VIEWING THE INVENTIONS OF A MAD SCIENTIST.";
+          "LOCATION: PORTFOLIO... HABAD'S STORAGE VAULT & LABORATORY ARCHIVES.";
         break;
       case path.includes("/contact"):
         locationBar.innerHTML =
