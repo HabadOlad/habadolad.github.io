@@ -188,3 +188,7 @@ h1 {
     height: 120px;
   }
 }
+
+a {
+  color: var(--colour-ambercrt);
+}
