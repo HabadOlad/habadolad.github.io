@@ -128,6 +128,7 @@ html {
 h1 {
   color: var(--colour-ambercrt);
   text-align: center;
+  overflow: hidden;
 }
 
 .navbar {
@@ -149,4 +150,41 @@ h1 {
 
 .navbar a:hover {
   color: var(--colour-ambercrt);
+}
+
+/* Container to place image and list side-by-side */
+.operator-container {
+  display: flex;
+  align-items: flex-start;
+  gap: 20px;
+  margin: 15px 0;
+}
+
+/* Size and style the image to fit neatly alongside the 4 list items */
+.operator-avatar {
+  width: 140px;
+  height: 140px;
+  object-fit: cover;
+  padding: 2px;
+  flex-shrink: 0; /* Prevents image from shrinking on smaller windows */
+}
+
+/* Align list inside the flex container */
+.operator-container ul {
+  margin: 0;
+  padding-left: 20px;
+  flex: 1;
+}
+
+/* Mobile fallback: stack vertically if screen is narrow */
+@media (max-width: 600px) {
+  .operator-container {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .operator-avatar {
+    width: 120px;
+    height: 120px;
+  }
 }
