@@ -70,3 +70,12 @@ document.addEventListener("DOMContentLoaded", () => {
     outputEl.innerHTML += `<div>The terminal hums, cursor blinking expectantly on the glass.What would you like to do?</div><br />`;
   }
 });
+
+const navigationBar = document.querySelector(".navbar");
+navigationBar.innerHTML = `
+<a href="../index.html">[0] Home</a>
+<a href="../blog/">[1] Blog</a>
+<a href="../portfolio/">[2] Portfolio</a>
+<a href="../about/">[3] About</a>
+<a href="../contact/">[4] Contact</a>
+`;
