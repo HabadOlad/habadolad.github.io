@@ -29,6 +29,11 @@ document.addEventListener("DOMContentLoaded", () => {
     }
   }
 
+  function printOutput(htmlContent) {
+    outputEl.innerHTML += htmlContent;
+    outputEl.scrollTop = outputEl.scrollHeight; // Automatically scrolls terminal to the latest line
+  }
+
   // --- 2. TERMINAL LOGIC (Only runs if elements exist) ---
   const inputEl = document.getElementById("input");
   const outputEl = document.getElementById("output");
