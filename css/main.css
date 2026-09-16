@@ -5,13 +5,18 @@ html {
     rgba(0, 0, 0, 0.8) 1px,
     transparent 2px
   );
-  height: 100%;
+  height: auto;
+  min-height: 100%;
   margin: 0;
   /* Dark blue/purple background for a retro theme */
   background-color: #111111;
   color: #e0e0e0; /* Light green/cyan text color */
   font-size: 25px;
   font-family: var(--font-retro);
+}
+
+body {
+  padding-bottom: 60px;
 }
 
 /* --- Flickering Keyframes --- */
@@ -41,9 +46,9 @@ html {
 /* --- Terminal Output Area --- */
 #terminal {
   padding: 20px;
-  height: 100%;
+  height: auto;
   box-sizing: border-box;
-  overflow-y: auto;
+  overflow-y: visible;
 
   /* 1. Apply the text glow immediately */
   text-shadow: 0 0 1px #ffffff, 0 0 4px #b0b0b0;
